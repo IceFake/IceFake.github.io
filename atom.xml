@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-05-13T12:28:41.820Z</updated>
+    <updated>2020-05-13T12:55:28.699Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[欧皇的成长之路]]></title>
+        <id>https://IceFake.github.io/post/TFT1/</id>
+        <link href="https://IceFake.github.io/post/TFT1/">
+        </link>
+        <updated>2020-05-13T12:49:24.000Z</updated>
+        <content type="html"><![CDATA[<p>只要我足够欧皇，就没有人能抢走第一！！！<br>
+<s>试着发一篇摆文/kk</s><br>
+<img src="https://IceFake.github.io/post-images/1589374292267.png" alt="" loading="lazy"><br>
+<img src="https://IceFake.github.io/post-images/1589374298252.png" alt="" loading="lazy"><br>
+<img src="https://IceFake.github.io/post-images/1589374305989.png" alt="" loading="lazy"><br>
+<img src="https://IceFake.github.io/post-images/1589374310082.png" alt="" loading="lazy"><br>
+摆它不香吗？<br>
+= =</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[模意义下的基本运算和欧拉定理]]></title>
         <id>https://IceFake.github.io/post/ouladingli/</id>
