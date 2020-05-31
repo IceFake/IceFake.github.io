@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-05-31T06:34:14.197Z</updated>
+    <updated>2020-05-31T06:36:15.885Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://IceFake.github.io/post/guan-yu/</id>
+        <link href="https://IceFake.github.io/post/guan-yu/">
+        </link>
+        <updated>2020-05-31T06:35:19.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>作为我的第一个Blog，这里记录了我的各种东西（包括“摆”，逃），当然，还有一些水题的题解在我的洛谷博客里面，因为我太懒了QAQ，懒得把他们搬过来。。。</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>是一个蒟蒻<br>
+真名的话。。。匿死！！！<br>
+其他各种名字：IceFake, Lovelotus, ZeroCold, 艾律稚朗堕。。。。。。</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>貌似有很多QAQ，such as KOG, LOL, COD16……<br>
+最爱小鹿！！！</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>由于我太弱了，只有QQ。。。<br>
+QQ：2745186036<br>
+e-mail：2745186036@qq.com（显然）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[欧皇的成长之路]]></title>
         <id>https://IceFake.github.io/post/TFT1/</id>
