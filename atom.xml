@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-06-01T11:42:19.238Z</updated>
+    <updated>2020-06-01T11:58:12.231Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,450 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[markdown特殊符号（不断更新ing）]]></title>
+        <id>https://IceFake.github.io/post/markdown-te-shu-fu-hao-bu-duan-geng-xin-ing/</id>
+        <link href="https://IceFake.github.io/post/markdown-te-shu-fu-hao-bu-duan-geng-xin-ing/">
+        </link>
+        <updated>2020-06-01T11:43:16.000Z</updated>
+        <content type="html"><![CDATA[<p>为了以后方便。。。<br>
+稍微从网上找了一些资料。。。<br>
+做了一下整理。。。<br>
+= =</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">对应编码(使用时去掉空格)</th>
+<th style="text-align:center">英文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">AND 符号</td>
+<td style="text-align:center">&amp; amp;</td>
+<td style="text-align:center">ampersand</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">小于</td>
+<td style="text-align:center">&amp; lt;</td>
+<td style="text-align:center">little</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">大于</td>
+<td style="text-align:center">&amp; gt;</td>
+<td style="text-align:center">great</td>
+</tr>
+<tr>
+<td style="text-align:center"> </td>
+<td style="text-align:center">空格</td>
+<td style="text-align:center">&amp; nbsp;</td>
+<td style="text-align:center">number space</td>
+</tr>
+<tr>
+<td style="text-align:center">¿</td>
+<td style="text-align:center">倒问号</td>
+<td style="text-align:center">&amp; iquest;</td>
+<td style="text-align:center">inverted question</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:center">问号</td>
+<td style="text-align:center">&amp; quest;</td>
+<td style="text-align:center">question</td>
+</tr>
+<tr>
+<td style="text-align:center">«</td>
+<td style="text-align:center">左书名号</td>
+<td style="text-align:center">&amp; laquo;</td>
+<td style="text-align:center">left angle quote</td>
+</tr>
+<tr>
+<td style="text-align:center">»</td>
+<td style="text-align:center">右书名号</td>
+<td style="text-align:center">&amp; raquo;</td>
+<td style="text-align:center">right angle quote</td>
+</tr>
+<tr>
+<td style="text-align:center">&quot;</td>
+<td style="text-align:center">引号</td>
+<td style="text-align:center">&amp; quot;</td>
+<td style="text-align:center">quote</td>
+</tr>
+<tr>
+<td style="text-align:center">‘</td>
+<td style="text-align:center">左单引号</td>
+<td style="text-align:center">&amp; lsquo;</td>
+<td style="text-align:center">left single quote</td>
+</tr>
+<tr>
+<td style="text-align:center">’</td>
+<td style="text-align:center">右单引号</td>
+<td style="text-align:center">&amp; rsquo:</td>
+<td style="text-align:center">right single quote</td>
+</tr>
+<tr>
+<td style="text-align:center">“</td>
+<td style="text-align:center">左双引号</td>
+<td style="text-align:center">&amp; ldquo:</td>
+<td style="text-align:center">left double quote</td>
+</tr>
+<tr>
+<td style="text-align:center">”</td>
+<td style="text-align:center">右双引号</td>
+<td style="text-align:center">&amp; rdquo:</td>
+<td style="text-align:center">right double quote</td>
+</tr>
+<tr>
+<td style="text-align:center">¶</td>
+<td style="text-align:center">段落符号</td>
+<td style="text-align:center">&amp; para;</td>
+<td style="text-align:center">paragraph</td>
+</tr>
+<tr>
+<td style="text-align:center">§</td>
+<td style="text-align:center">章节符</td>
+<td style="text-align:center">&amp; sect;</td>
+<td style="text-align:center">section</td>
+</tr>
+<tr>
+<td style="text-align:center">×</td>
+<td style="text-align:center">乘号</td>
+<td style="text-align:center">&amp; times;</td>
+<td style="text-align:center">times</td>
+</tr>
+<tr>
+<td style="text-align:center">÷</td>
+<td style="text-align:center">除号</td>
+<td style="text-align:center">&amp; divide;</td>
+<td style="text-align:center">divide</td>
+</tr>
+<tr>
+<td style="text-align:center">±</td>
+<td style="text-align:center">加减号</td>
+<td style="text-align:center">&amp; plusmn;</td>
+<td style="text-align:center">plus minus</td>
+</tr>
+<tr>
+<td style="text-align:center">ƒ</td>
+<td style="text-align:center">function</td>
+<td style="text-align:center">&amp; fnof;</td>
+<td style="text-align:center">还没查到</td>
+</tr>
+<tr>
+<td style="text-align:center">√</td>
+<td style="text-align:center">根号</td>
+<td style="text-align:center">&amp; radic;</td>
+<td style="text-align:center">radic</td>
+</tr>
+<tr>
+<td style="text-align:center">∞</td>
+<td style="text-align:center">无穷大</td>
+<td style="text-align:center">&amp; infin;</td>
+<td style="text-align:center">infinite</td>
+</tr>
+<tr>
+<td style="text-align:center">°</td>
+<td style="text-align:center">度</td>
+<td style="text-align:center">&amp; deg;</td>
+<td style="text-align:center">degree</td>
+</tr>
+<tr>
+<td style="text-align:center">≠</td>
+<td style="text-align:center">不等号</td>
+<td style="text-align:center">&amp; ne;</td>
+<td style="text-align:center">ne</td>
+</tr>
+<tr>
+<td style="text-align:center">≡</td>
+<td style="text-align:center">恒等于</td>
+<td style="text-align:center">&amp; equiv;</td>
+<td style="text-align:center">equivalent</td>
+</tr>
+<tr>
+<td style="text-align:center">≤</td>
+<td style="text-align:center">小于等于</td>
+<td style="text-align:center">&amp; le;</td>
+<td style="text-align:center">less than or equal to</td>
+</tr>
+<tr>
+<td style="text-align:center">≥</td>
+<td style="text-align:center">大于等于</td>
+<td style="text-align:center">&amp; ge;</td>
+<td style="text-align:center">great than or equal to</td>
+</tr>
+<tr>
+<td style="text-align:center">⊥</td>
+<td style="text-align:center">垂直符号</td>
+<td style="text-align:center">&amp; perp;</td>
+<td style="text-align:center">perpendicular</td>
+</tr>
+<tr>
+<td style="text-align:center">←</td>
+<td style="text-align:center">左箭头</td>
+<td style="text-align:center">&amp; larr;</td>
+<td style="text-align:center">left arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">→</td>
+<td style="text-align:center">右箭头</td>
+<td style="text-align:center">&amp; rarr;</td>
+<td style="text-align:center">right arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">↑</td>
+<td style="text-align:center">上箭头</td>
+<td style="text-align:center">&amp; uarr;</td>
+<td style="text-align:center">up arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">↓</td>
+<td style="text-align:center">下箭头</td>
+<td style="text-align:center">&amp; darr;</td>
+<td style="text-align:center">down arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">↔</td>
+<td style="text-align:center">水平箭头</td>
+<td style="text-align:center">&amp; harr;</td>
+<td style="text-align:center">horizontal arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">↕</td>
+<td style="text-align:center">竖直箭头</td>
+<td style="text-align:center">&amp; varr;</td>
+<td style="text-align:center">vertical arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">⇐</td>
+<td style="text-align:center">双线左箭头</td>
+<td style="text-align:center">&amp; lArr;</td>
+<td style="text-align:center">left arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">⇒</td>
+<td style="text-align:center">双线右箭头</td>
+<td style="text-align:center">&amp; rArr;</td>
+<td style="text-align:center">right arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">⇑</td>
+<td style="text-align:center">双线上箭头</td>
+<td style="text-align:center">&amp; uArr;</td>
+<td style="text-align:center">up arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">⇓</td>
+<td style="text-align:center">双线上箭头</td>
+<td style="text-align:center">&amp; dArr;</td>
+<td style="text-align:center">down arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">⇔</td>
+<td style="text-align:center">双线水平双箭头</td>
+<td style="text-align:center">&amp; hArr;</td>
+<td style="text-align:center">horizontal arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">⇕</td>
+<td style="text-align:center">双线竖直箭头</td>
+<td style="text-align:center">&amp; vArr;</td>
+<td style="text-align:center">vertical arrow</td>
+</tr>
+<tr>
+<td style="text-align:center">♠</td>
+<td style="text-align:center">黑桃</td>
+<td style="text-align:center">&amp; spades;</td>
+<td style="text-align:center">spades</td>
+</tr>
+<tr>
+<td style="text-align:center">♥</td>
+<td style="text-align:center">红桃</td>
+<td style="text-align:center">&amp; hearts;</td>
+<td style="text-align:center">hearts</td>
+</tr>
+<tr>
+<td style="text-align:center">♣</td>
+<td style="text-align:center">梅花</td>
+<td style="text-align:center">&amp; clubs;</td>
+<td style="text-align:center">club</td>
+</tr>
+<tr>
+<td style="text-align:center">♦</td>
+<td style="text-align:center">方块</td>
+<td style="text-align:center">&amp; diams;</td>
+<td style="text-align:center">diamonds</td>
+</tr>
+<tr>
+<td style="text-align:center">©</td>
+<td style="text-align:center">版权</td>
+<td style="text-align:center">&amp; copy;</td>
+<td style="text-align:center">copy right</td>
+</tr>
+<tr>
+<td style="text-align:center">®</td>
+<td style="text-align:center">注册商标</td>
+<td style="text-align:center">&amp; reg;</td>
+<td style="text-align:center">registration</td>
+</tr>
+<tr>
+<td style="text-align:center">™</td>
+<td style="text-align:center">商标</td>
+<td style="text-align:center">&amp; trade;</td>
+<td style="text-align:center">trade</td>
+</tr>
+<tr>
+<td style="text-align:center">¥</td>
+<td style="text-align:center">人民币</td>
+<td style="text-align:center">&amp; yen;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">€</td>
+<td style="text-align:center">欧元</td>
+<td style="text-align:center">&amp; euro;</td>
+<td style="text-align:center">euro</td>
+</tr>
+<tr>
+<td style="text-align:center">¢</td>
+<td style="text-align:center">美分</td>
+<td style="text-align:center">&amp; cent;</td>
+<td style="text-align:center">cent</td>
+</tr>
+<tr>
+<td style="text-align:center">£</td>
+<td style="text-align:center">英磅</td>
+<td style="text-align:center">&amp; pound;</td>
+<td style="text-align:center">pound</td>
+</tr>
+<tr>
+<td style="text-align:center">⊕</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">&amp; oplus;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">½</td>
+<td style="text-align:center">二分之一</td>
+<td style="text-align:center">&amp; frac12;</td>
+<td style="text-align:center">fraction</td>
+</tr>
+<tr>
+<td style="text-align:center">¼</td>
+<td style="text-align:center">四分之一</td>
+<td style="text-align:center">&amp; frac14;</td>
+<td style="text-align:center">fraction</td>
+</tr>
+<tr>
+<td style="text-align:center">‰</td>
+<td style="text-align:center">千分符号</td>
+<td style="text-align:center">&amp; permil;</td>
+<td style="text-align:center">per mille</td>
+</tr>
+<tr>
+<td style="text-align:center">∵</td>
+<td style="text-align:center">因为</td>
+<td style="text-align:center">\because</td>
+<td style="text-align:center">because</td>
+</tr>
+<tr>
+<td style="text-align:center">∴</td>
+<td style="text-align:center">所以</td>
+<td style="text-align:center">&amp; there4;</td>
+<td style="text-align:center">there fore</td>
+</tr>
+<tr>
+<td style="text-align:center">π</td>
+<td style="text-align:center">圆周率</td>
+<td style="text-align:center">&amp; pi;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">¹</td>
+<td style="text-align:center">商标1</td>
+<td style="text-align:center">&amp; sup1;</td>
+<td style="text-align:center">super 1</td>
+</tr>
+<tr>
+<td style="text-align:center">α</td>
+<td style="text-align:center">alpha</td>
+<td style="text-align:center">&amp; alpha;</td>
+<td style="text-align:center">alpha</td>
+</tr>
+<tr>
+<td style="text-align:center">β</td>
+<td style="text-align:center">beta</td>
+<td style="text-align:center">&amp; beta;</td>
+<td style="text-align:center">beta</td>
+</tr>
+<tr>
+<td style="text-align:center">γ</td>
+<td style="text-align:center">gamma</td>
+<td style="text-align:center">&amp; gamma;</td>
+<td style="text-align:center">gamma</td>
+</tr>
+<tr>
+<td style="text-align:center">δ</td>
+<td style="text-align:center">delta</td>
+<td style="text-align:center">&amp; delta;</td>
+<td style="text-align:center">delta</td>
+</tr>
+<tr>
+<td style="text-align:center">θ</td>
+<td style="text-align:center">theta</td>
+<td style="text-align:center">&amp; theta;</td>
+<td style="text-align:center">theta</td>
+</tr>
+<tr>
+<td style="text-align:center">λ</td>
+<td style="text-align:center">lambda</td>
+<td style="text-align:center">&amp; lambda;</td>
+<td style="text-align:center">lambda</td>
+</tr>
+<tr>
+<td style="text-align:center">σ</td>
+<td style="text-align:center">sigma</td>
+<td style="text-align:center">&amp; sigma;</td>
+<td style="text-align:center">sigma</td>
+</tr>
+<tr>
+<td style="text-align:center">τ</td>
+<td style="text-align:center">tau</td>
+<td style="text-align:center">&amp; tau;</td>
+<td style="text-align:center">tau</td>
+</tr>
+<tr>
+<td style="text-align:center">∦</td>
+<td style="text-align:center">恰不整除</td>
+<td style="text-align:center">\nparallel</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">∥</td>
+<td style="text-align:center">恰整除</td>
+<td style="text-align:center">\parallel</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">∤</td>
+<td style="text-align:center">不整除</td>
+<td style="text-align:center">\nmid</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">∣</td>
+<td style="text-align:center">整除</td>
+<td style="text-align:center">\mid</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于 φ 函数的一些。。。]]></title>
         <id>https://IceFake.github.io/post/guan-yu-dollarfdollar-han-shu-de-yi-xie/</id>
