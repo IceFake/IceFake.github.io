@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-06-01T11:58:12.231Z</updated>
+    <updated>2020-06-01T12:01:25.427Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[又到儿童节的时候啦！]]></title>
+        <id>https://IceFake.github.io/post/you-dao-er-tong-jie-de-shi-hou-la/</id>
+        <link href="https://IceFake.github.io/post/you-dao-er-tong-jie-de-shi-hou-la/">
+        </link>
+        <updated>2020-06-01T11:59:25.000Z</updated>
+        <content type="html"><![CDATA[<p>祝我自己儿童节快乐鸭！<br>
+希望我永远都能有一颗童心<br>
+不被这个世界所打败<br>
+也祝所有我所在意的人六一快乐！儿童节快乐哈哈哈！！！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[markdown特殊符号（不断更新ing）]]></title>
         <id>https://IceFake.github.io/post/markdown-te-shu-fu-hao-bu-duan-geng-xin-ing/</id>
