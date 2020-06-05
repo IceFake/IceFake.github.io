@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-06-02T07:25:16.501Z</updated>
+    <updated>2020-06-05T12:48:22.635Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -36,7 +36,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[markdown特殊符号（不断更新ing）]]></title>
+        <title type="html"><![CDATA[markdown特殊符号]]></title>
         <id>https://IceFake.github.io/post/markdown-te-shu-fu-hao-bu-duan-geng-xin-ing/</id>
         <link href="https://IceFake.github.io/post/markdown-te-shu-fu-hao-bu-duan-geng-xin-ing/">
         </link>
@@ -44,7 +44,12 @@
         <content type="html"><![CDATA[<p>为了以后方便。。。<br>
 稍微从网上找了一些资料。。。<br>
 做了一下整理。。。<br>
-= =</p>
+latex<br>
+= =<br>
+后来，我在网上又看到了一个更全的。。。。<br>
+就是这个<br>
+<a href="https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan">https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan</a><br>
+所以就不用更新啦</p>
 <table>
 <thead>
 <tr>
