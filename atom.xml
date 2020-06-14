@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-06-13T10:48:04.164Z</updated>
+    <updated>2020-06-14T11:23:10.111Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.6.14]]></title>
+        <id>https://IceFake.github.io/post/aBUynogbK/</id>
+        <link href="https://IceFake.github.io/post/aBUynogbK/">
+        </link>
+        <updated>2020-06-14T11:21:44.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="爱一个人决不潇洒为自己留了后步的也就不是爱"><em>爱一个人决不潇洒，为自己留了后步的，也就不是爱。</em></h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[编程第一定律]]></title>
         <id>https://IceFake.github.io/post/LATf2DGL4/</id>
@@ -546,6 +555,22 @@ latex<br>
 证毕啦。</p>
 <h2 id="参考资料">参考资料</h2>
 <p>《具体数学》</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[欧皇的成长之路]]></title>
+        <id>https://IceFake.github.io/post/TFT1/</id>
+        <link href="https://IceFake.github.io/post/TFT1/">
+        </link>
+        <updated>2020-05-13T12:49:24.000Z</updated>
+        <content type="html"><![CDATA[<p>只要我足够欧皇，就没有人能抢走第一！！！<br>
+<s>试着发一篇摆文/kk</s><br>
+<img src="https://IceFake.github.io/post-images/1589374292267.png" alt="" loading="lazy"><br>
+<img src="https://IceFake.github.io/post-images/1589374298252.png" alt="" loading="lazy"><br>
+<img src="https://IceFake.github.io/post-images/1589374305989.png" alt="" loading="lazy"><br>
+<img src="https://IceFake.github.io/post-images/1589374310082.png" alt="" loading="lazy"><br>
+摆它不香吗？<br>
+= =</p>
 ]]></content>
     </entry>
     <entry>
