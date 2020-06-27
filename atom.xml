@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-06-14T12:07:39.992Z</updated>
+    <updated>2020-06-27T13:14:48.772Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,49 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[化学选修4复习资料（自行整合）]]></title>
+        <id>https://IceFake.github.io/post/XDHsaEq99/</id>
+        <link href="https://IceFake.github.io/post/XDHsaEq99/">
+        </link>
+        <updated>2020-06-27T13:13:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="关于序言">关于序言</h1>
+<p>首先有几个结论——</p>
+<blockquote>
+<p>结论1:影响化学反应速率根本原因是反应物本身性质。<br>
+结论2:不同的外界条件都能够改变化学反应的速率。<br>
+结论3:有些反应是有一定限度的。</p>
+</blockquote>
+<p>然后就是一个很重要的化学研究方法——<strong>概念模型法</strong></p>
+<p>以及——两页PPT<br>
+<img src="https://s1.ax1x.com/2020/06/27/NcCjOJ.png" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/06/27/NcPB1U.png" alt="" loading="lazy"><br>
+然后。。。就没了——没了——了</p>
+<h1 id="至于第一章">至于第一章。。。</h1>
+<p>挺简单的。。。好像也没有啥难点。。。<br>
+哦对，有一个实验——<strong>中和反应反应热的测定</strong><br>
+有几点要注意的地方</p>
+<blockquote>
+<p>要用强酸和强碱反应<br>
+反应过程要绝热<br>
+反应时要不停搅拌最好采用氢氧化钠溶液和硫酸（盐酸易挥发，用的话要过量）</p>
+</blockquote>
+<p>关于实验过程：</p>
+<blockquote>
+<p>准备大小两个烧杯，大烧杯中放入塑料泡沫（或者纸屑，纸屑最好不要太小，作用是减少热量损耗）<br>
+将小烧杯放入大烧杯中，准备好盖子（中间有洞以便插入环形玻璃搅拌棒和温度计）<br>
+用温度计测量室温，将精确定量（包括物质的量浓度和体积）的酸碱稀溶液（其中一个可以略过量）放在房间内至均为室温<br>
+将两者加入烧杯中迅速将搅拌棒和温度计就位并盖上盖子<br>
+不停搅拌至反应完全<br>
+读出反应完全后的温度（这里可以采取每隔几十秒记录一下温度的方式）<br>
+根据水的比热和体积计算释放的能量。根据反应物的量和释放的能量计算中和热</p>
+</blockquote>
+<p>貌似有点啰嗦。。。<br>
+至于其他。。。略过啦</p>
+<h1 id="第二章的话-暂时还没学完">第二章的话。。。（暂时还没学完</h1>
+<p>有个小实验——硫酸和锌粒反应的那个</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.6.14]]></title>
         <id>https://IceFake.github.io/post/aBUynogbK/</id>
