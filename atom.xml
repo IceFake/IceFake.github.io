@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-07-06T23:56:41.119Z</updated>
+    <updated>2020-07-07T00:03:11.389Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[一些自制的视频]]></title>
+        <id>https://IceFake.github.io/post/sIjN_D1_T/</id>
+        <link href="https://IceFake.github.io/post/sIjN_D1_T/">
+        </link>
+        <updated>2020-07-06T23:59:29.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="king-of-glory">King of Glory</h2>
+<p><a href="https://www.bilibili.com/video/BV1ng4y1v7aB">守约</a><br>
+<a href="https://www.bilibili.com/video/BV1ig4y1v7ex">上单是信仰</a></p>
+<h2 id="皇室战争">皇室战争</h2>
+<p><a href="https://www.bilibili.com/video/BV1xK411s7qk">细节操作1</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[化学选修4复习资料（自行整合）]]></title>
         <id>https://IceFake.github.io/post/XDHsaEq99/</id>
@@ -717,314 +730,6 @@ latex<br>
 <p>THE END</p>
 <h3 id="修改记录">修改记录</h3>
 <p>20.6.1 修改了一下 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>φ</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">φ(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">φ</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 的定义。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[快乐的寒假]]></title>
-        <id>https://IceFake.github.io/post/happy_winter/</id>
-        <link href="https://IceFake.github.io/post/happy_winter/">
-        </link>
-        <updated>2020-05-12T13:21:17.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="20113">20.1.13</h1>
-<h2 id="矩阵乘法科普一下哈">矩阵乘法(<a href="https://www.cnblogs.com/ljy-endl/p/11411665.html">科普一下哈</a>)</h2>
-<h2 id="segment-tree线段树基础">Segment Tree(线段树)基础</h2>
-<p>线段树是算法竞赛中常用的用来维护<strong>区间信息</strong>(<s>最重要的东西</s>)的数据结构。</p>
-<p>关于<a href="https://www.cnblogs.com/xenny/p/9801703.html">线段树</a>&lt;--这里有很多(<s>虽然都不懂。。。</s>)(逃ε=ε=ε=┏(゜ロ゜;)┛</p>
-<p>以及——<a href="https://blog.csdn.net/michael_byrant/article/details/79156549">从零开始的线段树旅行</a></p>
-<p>怎么能少了<a href="https://oi-wiki.org/ds/seg/">oi-wiki</a>?</p>
-<h3 id="重点啦啦啦线段树的性质">重点啦啦啦(线段树的性质)</h3>
-<p><strong>fr</strong>. 线段树是平衡的二叉树，最大深度logn。</p>
-<p><strong>se</strong>. 任意的区间[a,b]在线段树的查询或查找过程中把这个线段最多分成log(b-a)份。</p>
-<p>一个一维struct数组就可以存储一棵线段树。</p>
-<hr>
-<h2 id="lazy-mark">Lazy Mark</h2>
-<h3 id="气喘吁吁刚从teachers-ppt中kuai来的">(气喘吁吁——<s>刚从teacher's PPT中kuai来的</s>)</h3>
-<p>内容蛮多——</p>
-<blockquote>
-<ul>
-<li>对于一个修改操作，我们在线段树中找到对应的结点时，我们可以将其打上标记，而不是直接往下继续修改。</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>在询问或修改一个结点i时，若i被标记过，则修改i并将标记传给i的左右儿子，同时清空i的标记。</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>对于某些修改，比如说对一段区间同时加上某个数，只需在询问时自底向上更新值即可。</li>
-</ul>
-</blockquote>
-<hr>
-<h2 id="zkw线段树">ZKW线段树</h2>
-<p>真的是<s>重口味</s>。。。</p>
-<p><a href="https://www.cnblogs.com/Judge/p/9514862.html">详细讲解</a>ZKW，咳咳——</p>
-<p>ZKW关键就在于其本质就是强行将一棵线段树填满，从而实现一种<strong>自底向上</strong>的优化常数的一种算法。</p>
-<p>并且，<s>重口味线段树</s>，呸——是ZKW线段树不用Lazy Mark就可以进行区间修改和求和。</p>
-<hr>
-<h2 id="树状数组">树状数组</h2>
-<p>teacher's 通俗易懂的解释——</p>
-<blockquote>
-<p>“树状数组能做的，线段树都能做线段树能做的，树状数组不一定能做……”</p>
-</blockquote>
-<blockquote>
-<p>“因为树状数组维护的信息要满足可减性”</p>
-</blockquote>
-<blockquote>
-<p>“所以为什么我们要学树状数组呢？”</p>
-</blockquote>
-<blockquote>
-<p>“因为线段树它跑得太慢了”</p>
-</blockquote>
-<h4 id="代码实现">代码实现</h4>
-<pre><code class="language-cpp">inline int lowbit(int x)
-{
-	return x &amp; (-x);
-}
-
-int query(int pos)
-{ 
-	int ans = 0;
-	while(pos) {
-		ans+=s[pos];
-		pos-=lowbit(pos);
-	}
-	return ans;
-}
-
-void add(int pos, int x)
-{ 
-	while(pos&lt;=N) {
-		s[pos]+=x;
-		pos+=lowibt(pos);
-	}
-}
-
-</code></pre>
-<ul>
-<li>坚决不压行的邪教码风，嘿嘿嘿。</li>
-</ul>
-<p>--&gt;<a href="https://www.cnblogs.com/xenny/p/9739600.html">资料补充</a>&lt;--</p>
-<hr>
-<h2 id="关于主席树可持久化线段树奇淫技巧之一">关于主席树(可持久化线段树)[奇淫技巧之一]</h2>
-<p>通俗地说，就是一<s>坨</s>堆线段树。。。<s>什么鬼形容？</s></p>
-<p><a href="https://www.luogu.com.cn/problem/P3834">模板题(<s>来自某谷</s>)</a></p>
-<p>From CSDN的<s>邪教</s><a href="https://blog.csdn.net/ModestCoder_/article/details/90107874">讲解</a>。。。</p>
-<p>有了可持久化，天黑都不怕。</p>
-<hr>
-<h2 id="其它奇淫技巧">其它奇淫技巧</h2>
-<ul>
-<li>
-<p>线段树合并与分离</p>
-</li>
-<li>
-<p>线段树分治（将修改操作转化为撤销操作）</p>
-</li>
-<li>
-<p>区间最值线段树（Segment Tree Beats! 吉司机线段树）</p>
-</li>
-<li>
-<p>李超线段树（线段线段树）</p>
-</li>
-</ul>
-<hr>
-<h1 id="20114">20.1.14</h1>
-<hr>
-<h2 id="动态规划加强版数学归纳法">动态规划(加强版数学归纳法)</h2>
-<hr>
-<h4 id="基本思想空间换时间">基本思想——空间换时间</h4>
-<h3 id="满足三个特征">满足<a href="https://blog.csdn.net/every__day/article/details/88174082">三个特征</a></h3>
-<ul>
-<li>
-<p>最优子结构</p>
-</li>
-<li>
-<p><a href="https://www.cnblogs.com/mhpp/p/7700235.html">无后效性原则</a></p>
-</li>
-<li>
-<p>重复子问题</p>
-</li>
-</ul>
-<p>目的：通常是求最优的活动路线</p>
-<hr>
-<h2 id="区间dp貌似忘了它">区间DP(貌似忘了它。。。)</h2>
-<hr>
-<h2 id="最小支配集-最大独立集-最小点覆盖">最小支配集 &amp; 最大独立集 &amp; 最小点覆盖</h2>
-<hr>
-<h3 id="定义如下来自某度百科">定义如下：(来自某度百科)</h3>
-<blockquote>
-<p>支配集：给定无向图G =（V , E）,其中V是点集，E是边集，称V的一个子集S称为支配集当且仅当对于V-S中任何一个点v,都有S中的某个点u, 使得(u, v) ∈E。</p>
-</blockquote>
-<blockquote>
-<p>独立集：指图 G 中两两互不相邻的顶点构成的集合。任意有关图中团的性质都能很自然的转述成独立集的性质。</p>
-</blockquote>
-<blockquote>
-<p>点覆盖：对于图G=(V,E)中的一个点覆盖是一个集合S⊆V使得每一条边至少有一个端点在S中。</p>
-</blockquote>
-<h3 id="代码实现与分析"><a href="https://www.cnblogs.com/Ash-ly/p/5775934.html">代码实现与分析</a></h3>
-<pre><code>(代码留坑处)
-</code></pre>
-<hr>
-<h2 id="树的重心与直径"><a href="https://www.cnblogs.com/adelalove/p/8848871.html">树的重心与直径</a>(<a href="https://blog.csdn.net/Ronaldo7_ZYB/article/details/87181534">补充内容</a>)</h2>
-<hr>
-<h2 id="数位dp">数位DP</h2>
-<hr>
-<p>数位DP归于**<a href="https://blog.csdn.net/ChenKunn/article/details/83314140">计数DP</a>**</p>
-<p>来自某谷的日报中写道——“<a href="https://www.luogu.org/blog/virus2017/shuweidp">传送门</a>”</p>
-<h3 id="有关数位dp的一些例题及讲解"><a href="https://blog.csdn.net/chenxiaoran666/article/details/82948835">有关数位DP的一些例题及讲解</a></h3>
-<hr>
-<h2 id="状压dp">状压DP</h2>
-<p>目的：减小内存消耗，利用状压dp，所有的状态都可以用一个32位甚至16位的整数，位运算能提高运算的速度。</p>
-<h3 id="需要用到的一些常见的位运算">需要用到的一些常见的位运算</h3>
-<blockquote>
-<p>&amp;：（按位与）均1则1，有0则0。用途：清零，取指定位，保留一位。</p>
-</blockquote>
-<blockquote>
-<p>|：（按位或）均0则0，有1则1。</p>
-</blockquote>
-<blockquote>
-<p>^：（按位异或）相同为0，相反为1。~:取反操作。</p>
-</blockquote>
-<blockquote>
-<p>&lt;&lt;：左移相当于乘2.但是要注意有符号数和无符号数。</p>
-</blockquote>
-<blockquote>
-<p>&gt;&gt;：右移相当于除2.</p>
-</blockquote>
-<blockquote>
-<p>注：数据范围在20以内，就尝试用状压 dp解决。分为自定向下的记忆化搜索和自下而上的递推式求解。</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>去掉最后一位 <code>x &gt;&gt; 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>在最后加一个0 <code>x &lt;&lt; 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>在最后加一个1 <code>(x &lt;&lt; 1) + 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把最后一位变成1 <code>x | 1</code> （|定值为1）</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把最后一位变成0 <code>(x | 1) - 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>最后一位取反 <code>x ^ 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把右数第k位变成1 <code>x | (1 &lt;&lt; (k - 1))</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把右数第k位变成0 <code>x &amp; (~ (1 &lt;&lt; (k - 1)))</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>右数第k位取反 <code>x xor (1 shl (k - 1))</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>取末k位 <code>x &amp; ((1 &lt;&lt; k) - 1)</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>取右数第k位 <code>(x &gt;&gt; (k - 1)) &amp; 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把末k位变成1 <code>x | ((1 &lt;&lt; k) - 1)</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>末k位取反 <code>x ^ ((1 &lt;&lt; k) - 1)</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把右边连续的1变成0 <code>(x &amp; (x + 1))</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把右起第一个0变成1 <code>x | (x + 1)</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>把右边连续的0变成1 <code>x | (x - 1)</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>取右边连续的1 <code>(x ^ (x + 1)) &gt;&gt; 1</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>……去掉右起第一个1的左边 <code>x &amp; (-x)</code></p>
-</blockquote>
-</blockquote>
-<h3 id="例题及详解"><a href="https://www.cnblogs.com/Ronald-MOK1426/p/8456945.html">例题及详解</a></h3>
-<hr>
-<h1 id="20115">20.1.15</h1>
-<hr>
-<h2 id="多重背包">多重背包</h2>
-<hr>
-<h3 id="题面">题面</h3>
-<blockquote>
-<p>有N种物品和一个容量为V的背包。</p>
-</blockquote>
-<blockquote>
-<p>第i种物品最多有n[i]件可用，每件费用是w[i]，价值是c[i]。</p>
-</blockquote>
-<blockquote>
-<p>求解将哪些物品装入背包可使这些物品的费用总和不超过背包容量，且价值总和最大。</p>
-</blockquote>
-<p>蒟蒻 = Amorphophalms Konjac = AK -&gt; lcp OrOrOrOrOrOrOrOrOrOrOrz</p>
-<p><a href="https://www.cnblogs.com/mfrank/p/10816837.html">观巨人如何AC</a></p>
-<h3 id="三大背包"><a href="https://www.cnblogs.com/mfrank/p/10849505.html">三大背包</a></h3>
-<ul>
-<li><a href="https://www.cnblogs.com/mfrank/p/10533701.html">0 1 背包</a> <a href="https://www.cnblogs.com/mfrank/p/10587463.html">还有。。。</a></li>
-<li><a href="https://www.cnblogs.com/mfrank/p/10803417.html">完全背包</a></li>
-<li>多重背包</li>
-</ul>
-<hr>
-<h2 id="带权二分">带权二分</h2>
-<hr>
-<p>(留个空)</p>
-<hr>
-<h2 id="数链剖分">数链剖分</h2>
-<hr>
-<h3 id="详解"><a href="https://www.cnblogs.com/ivanovcraft/p/9019090.html">详解</a></h3>
-<h3 id="原理和实现"><a href="https://www.cnblogs.com/George1994/p/7821357.html">原理和实现</a></h3>
-<hr>
-<h2 id="长链剖分">长链剖分</h2>
-<hr>
-<blockquote>
-<p>长链剖分是一种类似dsu on tree的小trick，可以把维护子树中只与深度有关的信息做到线性的时间复杂度。</p>
-</blockquote>
-<h3 id="某大神的长链剖分学习笔记">某大神的<a href="https://blog.csdn.net/litble/article/details/87965999">长链剖分学习笔记</a></h3>
-<hr>
 ]]></content>
     </entry>
 </feed>
