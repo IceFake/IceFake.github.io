@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-15T09:24:08.904Z</updated>
+    <updated>2020-10-15T14:25:02.773Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -28,6 +28,7 @@
 <h2 id="练习记录">练习记录</h2>
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
 <h2 id="总结">总结</h2>
+<p>更正题目的时间有点久QAQ</p>
 ]]></content>
     </entry>
     <entry>
@@ -126,6 +127,9 @@ T1在最后1h左右想到可以二分，但没想到差分，于是打了一份O
 每次比较当前节点两个子节点的哈希值，最后找出size最大的作为答案<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="blue"><mrow><mi>P</mi><mn>1381</mn><mtext> </mtext><mi mathvariant="normal">单</mi><mi mathvariant="normal">词</mi><mi mathvariant="normal">背</mi><mi mathvariant="normal">诵</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{blue}{P1381\ 单词背诵}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord" style="color:blue;"><span class="mord mathdefault" style="margin-right:0.13889em;color:blue;">P</span><span class="mord" style="color:blue;">1</span><span class="mord" style="color:blue;">3</span><span class="mord" style="color:blue;">8</span><span class="mord" style="color:blue;">1</span><span class="mspace" style="color:blue;"><span style="color:blue;"> </span></span><span class="mord cjk_fallback" style="color:blue;">单</span><span class="mord cjk_fallback" style="color:blue;">词</span><span class="mord cjk_fallback" style="color:blue;">背</span><span class="mord cjk_fallback" style="color:blue;">诵</span></span></span></span></span> <a href="https://www.luogu.com.cn/record/39819856">record</a><br>
 hash + 双指针，hash可以用map，（ <s>斜眼笑</s> ）</p>
+<h2 id="1015">10.15</h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="green"><mrow><mi>P</mi><mn>6155</mn><mtext> </mtext><mi mathvariant="normal">修</mi><mi mathvariant="normal">改</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{green}{P6155\ 修改}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord" style="color:green;"><span class="mord mathdefault" style="margin-right:0.13889em;color:green;">P</span><span class="mord" style="color:green;">6</span><span class="mord" style="color:green;">1</span><span class="mord" style="color:green;">5</span><span class="mord" style="color:green;">5</span><span class="mspace" style="color:green;"><span style="color:green;"> </span></span><span class="mord cjk_fallback" style="color:green;">修</span><span class="mord cjk_fallback" style="color:green;">改</span></span></span></span></span> <a href="https://www.luogu.com.cn/record/39867508">record</a><br>
+栈的运用 + 一点点贪心</p>
 ]]></content>
     </entry>
     <entry>
