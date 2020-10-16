@@ -2,20 +2,20 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>10.16每日总结 | IceFake&#39;s Blog</title>
-<link rel="shortcut icon" href="https://IceFake.github.io/favicon.ico?v=1602836798087">
+<title>10.16学习总结 | IceFake&#39;s Blog</title>
+<link rel="shortcut icon" href="https://IceFake.github.io/favicon.ico?v=1602863003081">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://IceFake.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="10.16每日总结 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="10.16学习总结 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
     <meta name="description" content="关于考试
-T1：应该算是贪心。然后把一个continue打成了break，一举通过大样例，结果交上去全WA。QAQ
-T2：找规律，没什么好说的。
-T3：单调栈+二分，也可以用线段树。。。
-T4：并查集，一个区间没有贡献当且仅当它能被其他区间..." />
+0 + 100 + 0 + 10
+T1：应该算是贪心。
+考试的时候，凭感觉进行贪心，写了大概20min，然后一举通过大样例，结果交上去全WA。QAQ
+下午更正的时候更正了30min，才发现错在一个break打成了continue。..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -25,7 +25,7 @@ T4：并查集，一个区间没有贡献当且仅当它能被其他区间..." /
       <div class="main-content">
         <div class="site-header">
   <a href="https://IceFake.github.io">
-  <img class="avatar" src="https://IceFake.github.io/images/avatar.png?v=1602836798087" alt="">
+  <img class="avatar" src="https://IceFake.github.io/images/avatar.png?v=1602863003081" alt="">
   </a>
   <h1 class="site-title">
     IceFake&#39;s Blog
@@ -84,14 +84,14 @@ T4：并查集，一个区间没有贡献当且仅当它能被其他区间..." /
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              10.16每日总结
+              10.16学习总结
             </h2>
             <div class="post-info">
               <span>
                 2020-10-16
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
@@ -99,12 +99,38 @@ T4：并查集，一个区间没有贡献当且仅当它能被其他区间..." /
             <div class="post-content-wrapper">
               <div class="post-content">
                 <h2 id="关于考试">关于考试</h2>
-<p><strong>T1</strong>：应该算是贪心。然后把一个continue打成了break，一举通过大样例，结果交上去全WA。QAQ</p>
+<p>0 + 100 + 0 + 10</p>
+<p><strong>T1</strong>：应该算是贪心。<br>
+考试的时候，凭感觉进行贪心，写了大概20min，然后一举通过大样例，结果交上去全WA。QAQ<br>
+下午更正的时候更正了30min，才发现错在一个break打成了continue。。。<br>
+以后不能过了大样例就不检查了。。。同时自己还可以造几个特殊一点的数据测试程序。</p>
 <p><strong>T2</strong>：找规律，没什么好说的。</p>
-<p><strong>T3</strong>：单调栈+二分，也可以用线段树。。。</p>
-<p><strong>T4</strong>：并查集，一个区间没有贡献当且仅当它能被其他区间所表示。我觉得线段树真的可以做。。。但是判断的地方想错了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
+<p><strong>T3</strong>：单调栈+二分，也可以用线段树。。。<br>
+更正了1个多小时，才写出来，然后还是懵的，后来又想了好久才明白。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
+<p><strong>T4</strong>：并查集，一个区间没有贡献当且仅当它能被其他区间所表示。<br>
+考场上用了2个小时写这道题，想的是一个大概是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>m</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的做法，然后用线段树应该是可以优化到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m logm)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span> 的，结果判断区间贡献的方法错了，然后就挂成10pts。（ <s>竟然还有10pts</s><br>
+我觉得线段树真的可以做。。。（虽然写了2个小时 + 后来想了30min 都没写出来）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
 <h2 id="练习记录">练习记录</h2>
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<p><a href="https://blog.csdn.net/qq_41713256/article/details/80805338">拓扑排序</a></p>
+<p>更新了一下拓扑排序的代码（写法）</p>
+<pre><code class="language-cpp">Rep(i,1,n) if(!in[i]) q.push(i);
+while(!q.empty()) {
+    int x = q.front(); q.pop();
+    ans[++ tot] = x;
+    for(int i = head[x]; i ; i = f[i].nxt) {
+        int v = f[i].to; dec(in[v]);
+        if(!in[v]) q.push(v);  
+    }
+}
+if(tot == n) Rep(i,1,tot) printf(&quot;%lld &quot;, ans[i]);
+else printf(&quot;No Answer!&quot;);
+</code></pre>
+<p>写了三道拓扑排序的板题，感觉还行，有两道都是一遍编译过并且AC。</p>
+<p>在CF上找了一道最近的比赛中的dp题写保持感觉。。。</p>
+<p>然后，复习了一点点数论知识。<br>
+重新证明了一遍欧拉定理（感觉没啥用QAQ<br>
+于是，我成功地忘记了今天要复习SPAF和Floyd来着。。。（下次一定 不会了）</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 
