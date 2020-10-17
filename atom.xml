@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-17T08:37:27.028Z</updated>
+    <updated>2020-10-17T15:38:56.223Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -25,7 +25,7 @@
 不过要注意是从0点跳到n+1而不是n，这里我又挂掉了10pts。。。又是边界问题。。。</p>
 <p><strong>T3</strong>：唯一一道过了的题QAQ（感动）</p>
 <p><strong>T4</strong>：背包dp + 一点点转化 + 二分 + 离线操作。<br>
-听说<strong>朱神</strong>好像没有离线也过了，还跑得很快。QAQ<br>
+听说<strong>朱神</strong>好像没有离线也过了，还跑得很快。QAQ（好像是把dp数组开成二维的（毕竟n比较小<br>
 考试的时候先是打了个40pts的背包。。。<br>
 然后突然发现如果将其按照时间排序可以优化掉一层循环，于是就加了离线，60pts。<br>
 然后发现v和c互换就可以进行正常的背包dp，于是改了一下并加了一个<strong>upper_bound</strong>查找ans。<br>
@@ -33,6 +33,9 @@
 <p><strong>考试总结</strong>：别的不说，边界问题一定要注意！！！这次是挂了15pts，数据强一点或者捆绑测试说不定就无了。。。</p>
 <h2 id="练习记录">练习记录</h2>
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<p>下午写了几道二分。。。但好像把分块给咕掉了，明天放假的话，可以把分块补一下。<br>
+晚上本来想打CF的，但九点半还没到家，就只后来稍微看了下题，交了一道题的代码，打算有时间就把剩下几道题中能力范围左右的题写了。<br>
+总的来说今天的状态还可以，希望能够每天保持。</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
