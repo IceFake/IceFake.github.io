@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://IceFake.github.io</id>
+    <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-17T07:11:29.055Z</updated>
+    <updated>2020-10-17T07:13:57.240Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://IceFake.github.io"/>
+    <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
     <subtitle>Lovelotus</subtitle>
     <logo>https://IceFake.github.io/images/avatar.png</logo>
