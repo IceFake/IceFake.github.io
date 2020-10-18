@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-18T14:43:29.429Z</updated>
+    <updated>2020-10-18T15:38:57.145Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -17,15 +17,20 @@
         </link>
         <updated>2020-10-18T13:58:59.000Z</updated>
         <content type="html"><![CDATA[<h2 id="关于上午">关于上午。。。</h2>
-<p>咕咕咕，sleep <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Q</mi><mi>A</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">QAQ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">Q</span><span class="mord mathdefault">A</span><span class="mord mathdefault">Q</span></span></span></span></p>
+<p>咕咕咕，sleep<br>
+醒来就11：50了。。。 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Q</mi><mi>A</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">QAQ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">Q</span><span class="mord mathdefault">A</span><span class="mord mathdefault">Q</span></span></span></span></p>
 <h2 id="下午">下午。。。</h2>
 <p>去看牙齿，折腾了一下午。。。<br>
-不过在等的时候看了一下luogu月赛的T1。</p>
+不过在等的时候口胡了一下luogu月赛的T1，看了下T2，暂时没有思考。</p>
 <h2 id="晚上">晚上</h2>
 <p>到机房的时候CF只剩30分钟了QAQ，再次错过一场Div.2。。。</p>
 <h2 id="练习记录">练习记录</h2>
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>晚上的时候写了几道分块和二分答案的题。。。</p>
+<p>晚上的时候写了几道分块和二分答案的题。。。<br>
+然后被推荐了一道分块的交互题CF1406E，今天差不多弄明白了做法：<br>
+小于100000的素数大约有9500个，所以我们只需要对这些素数进行分块，每个进行一次B操作，然后对于每个块进行一遍A操作。<br>
+打算明天把代码敲出来。</p>
+<p>明天早上迎接新难度的考试</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
