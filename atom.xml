@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-20T04:01:20.554Z</updated>
+    <updated>2020-10-20T07:10:14.887Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -19,17 +19,23 @@
         <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
 <p>100 + 60 + 60 + 100 = 320</p>
 <p>T1：hash + map 暴力过了。。。<br>
-大概20min写完了。。。</p>
+大概20min写完了。。。<br>
+总所周知，<code>long long</code> 的自然溢出是很可靠的。。。<br>
+<img src="https://s1.ax1x.com/2020/10/20/BSLcXq.png" alt="" loading="lazy"></p>
 <p>T2：筛素数。<br>
 20min写完了，过了大数据就没怎么管，结果交上去TLE4个点，才发现筛数写挂了。。。</p>
 <p>T3：二位前缀和。。。<br>
 写了2个小时。。。（码力不行QAQ<br>
-然后没据统计点的时候没有在原矩形中，于是WA了四个点。。。</p>
+然后没据统计点的时候没有在原矩形中，于是WA了四个点。。。<br>
+更正的时后多开了一个 $4000 \times 4000 $ 的 bool 数组。。。然后被卡空间了。<br>
+最后去掉了 <code>#define int long long</code> 才过。<br>
+以后一定要注意空间，不能总是 <code>#define int long long</code> 。。。</p>
 <p>T4：记录每条边的贡献就差不多了。<br>
 对于每一个子节点所对应的边i，它所产生的贡献为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>×</mo><mo>(</mo><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>[</mo><mn>1</mn><mo>]</mo><mo>−</mo><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>)</mo><mo>×</mo><mi>w</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">size[i] \times (size[1] - size[i]) \times w[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">e</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">e</span><span class="mopen">[</span><span class="mord">1</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">e</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span> ，先计算出总和，然后每次更新对应边的贡献变化就行了。<br>
 这个题。。。看到树上两点之间的最短路的时候有点懵，（树上两点之间不是只有一条路嘛。。。<br>
 不过想明白之后15min左右就写出来了。</p>
-<p>总结：感觉今天的题都还好，都在能力范围左右，但可惜挂了好几个点QAQ。</p>
+<p>总结：感觉今天的题都还好，都在能力范围左右，但可惜挂了好几个点QAQ。<br>
+<strong>以后算时间还要记得算空间！！！</strong></p>
 <h2 id="练习记录">练习记录</h2>
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
 <h2 id="计划">计划</h2>
