@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-20T16:22:45.369Z</updated>
+    <updated>2020-10-20T16:29:06.798Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -20,7 +20,7 @@
 <p>100 + 60 + 60 + 100 = 320</p>
 <p>T1：hash + map 暴力过了。。。<br>
 大概20min写完了。。。<br>
-总所周知，<code>long long</code> 的自然溢出是很可靠的。。。<br>
+总所周知，<code>long long</code> 的自然溢出是 <s>很可靠的</s> 。。。<br>
 <img src="https://s1.ax1x.com/2020/10/20/BSLcXq.png" alt="" loading="lazy"></p>
 <p>T2：筛素数。<br>
 20min写完了，过了大数据就没怎么管，结果交上去TLE4个点，才发现筛数写挂了。。。</p>
