@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>做题记录 | IceFake&#39;s Blog</title>
-<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603373120657">
+<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603374570902">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://IceFake.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="做题记录 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
@@ -27,7 +27,7 @@ P2014 [CTSC1997..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://IceFake.github.io/">
-  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603373120657" alt="">
+  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603374570902" alt="">
   </a>
   <h1 class="site-title">
     IceFake&#39;s Blog
@@ -236,7 +236,12 @@ whlie(x) {
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="purple"><mrow><mi>C</mi><mi>F</mi><mn>55</mn><mi>D</mi><mtext> </mtext><mi>B</mi><mi>e</mi><mi>a</mi><mi>u</mi><mi>t</mi><mi>i</mi><mi>f</mi><mi>u</mi><mi>l</mi><mtext> </mtext><mi>n</mi><mi>u</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{purple}{CF55D\ Beautiful\ numbers}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord" style="color:purple;"><span class="mord mathdefault" style="margin-right:0.07153em;color:purple;">C</span><span class="mord mathdefault" style="margin-right:0.13889em;color:purple;">F</span><span class="mord" style="color:purple;">5</span><span class="mord" style="color:purple;">5</span><span class="mord mathdefault" style="margin-right:0.02778em;color:purple;">D</span><span class="mspace" style="color:purple;"><span style="color:purple;"> </span></span><span class="mord mathdefault" style="margin-right:0.05017em;color:purple;">B</span><span class="mord mathdefault" style="color:purple;">e</span><span class="mord mathdefault" style="color:purple;">a</span><span class="mord mathdefault" style="color:purple;">u</span><span class="mord mathdefault" style="color:purple;">t</span><span class="mord mathdefault" style="color:purple;">i</span><span class="mord mathdefault" style="margin-right:0.10764em;color:purple;">f</span><span class="mord mathdefault" style="color:purple;">u</span><span class="mord mathdefault" style="margin-right:0.01968em;color:purple;">l</span><span class="mspace" style="color:purple;"><span style="color:purple;"> </span></span><span class="mord mathdefault" style="color:purple;">n</span><span class="mord mathdefault" style="color:purple;">u</span><span class="mord mathdefault" style="color:purple;">m</span><span class="mord mathdefault" style="color:purple;">b</span><span class="mord mathdefault" style="color:purple;">e</span><span class="mord mathdefault" style="margin-right:0.02778em;color:purple;">r</span><span class="mord mathdefault" style="color:purple;">s</span></span></span></span></span> <a href="https://codeforces.com/contest/55/submission/96356295">record</a><br>
 <a href="https://icefake.github.io/post/J7y1Lr0V5/">题解</a><br>
 <span class='katex-error' title='ParseError: KaTeX parse error: Expected &#039;}&#039;, got &#039;#&#039; at position 26: …ple}{P3413\ SAC#̲1\ -\ 萌数}'>\color{purple}{P3413\ SAC#1\ -\ 萌数}</span> <a href="https://www.luogu.com.cn/record/40306979">record</a><br>
-虽然不知道为啥样例全WA但过了？？？</p>
+虽然不知道为啥样例全WA但过了？？？<br>
+输入有1000位所以可以用 string，然后手打一个几行的 -1 高精。<br>
+后面就都是数位dp的套路了，用 dp[pos][head][meng] 记录当前位数为 pos，上一位为 head，当前是否符合“萌”的性质 的数量。传六个参数：pos，head，sta，meng，pre，limit，其中，sta 表示 前两位的数字，pre 表示前导零，limit 表示是否到达上限。<br>
+转移式：</p>
+<pre><code class="language-cpp">Rep(i,0,up) p = (pre &amp;&amp; !i) ? -1 : i, tem += dfs(pos - 1, p, head, meng || ((p == head || p == sta) &amp;&amp; p != -1), p == -1, (p == up) &amp;&amp; limit), _(tem);
+</code></pre>
 
               </div>
               <div class="toc-container">
