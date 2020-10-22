@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-21T15:35:06.692Z</updated>
+    <updated>2020-10-22T07:41:46.318Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[10.22学习总结]]></title>
+        <id>https://IceFake.github.io/post/BgUtZ2TRQ/</id>
+        <link href="https://IceFake.github.io/post/BgUtZ2TRQ/">
+        </link>
+        <updated>2020-10-22T06:39:40.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p>100 + 100 + 0 + 100 = 300</p>
+<p><strong>T1</strong>：结论题。套一个求gcd的就过了。<br>
+不过这个大样例给了两个互质的数，差点一举通过大样例，全 WA 。</p>
+<p><strong>T2</strong>：优先队列维护返回贪心。<br>
+记得判一下负的快乐值，（大样例不判也能过。。。</p>
+<p><strong>T3</strong>：图论题。<br>
+考场上想了3个小时硬是没想出来，爆0。QAQ<br>
+后来下午问了朱神<br>
+下面是关于此题的做法：</p>
+<blockquote>
+<p>首先对于每一个 p[i]，从 i 向 p[i] 连一条有向边。<br>
+那么题目就可以转化为：改变其中最少的边，从 0 开始遍历图上所有的点然后回到 0，使得该路线的字典序最小<br>
+然后我们将每一个环（除了包含0的那个环，暂且称之为初始环）中最小的点放入一个队列中，每次将初始环中下一位与队首进行比较。</p>
+</blockquote>
+<p><strong>T4</strong>：贪心 + 一点点跑图<br>
+<s>莫名其妙地过了大样例</s><br>
+分析：<strong>对于每一个点，它地出度一定为 1。</strong><br>
+于是我们先统计每一个点的入度 in[i]，然后考虑贪心，如果一个点入读为 0，那这个点是一定不能扔到世界中去的，必须拿在手中，那么我们将该点所限制的点扔到世界中就一定是最优的。</p>
+<blockquote>
+<p>（因为这个被扔到世界中的点最多也只能限制一个点，若它被拿在手中也只能将它所限制的唯一一个点扔出，而这样反而浪费了之前这个入读为 0 的点 —— 它被拿在手中而且毫无贡献。）</p>
+</blockquote>
+<p>接下来我们就找出所有入度为 0 的点，将它们全部拿在手中，并扔出所有它们所限制的点，并将 其限制点 <strong>所限制 的 点 的 入度</strong> 减一，并判断该点入度是否为 0。<br>
+进行以上操作之后，就只剩下若干个环，而对于每一个环，我们发现最多只能扔出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⌊</mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi></mrow><mn>2</mn></mfrac><mo>⌋</mo></mrow><annotation encoding="application/x-tex">\lfloor \frac{size}{2} \rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.200664em;vertical-align:-0.345em;"></span><span class="mopen">⌊</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.855664em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span><span class="mord mathdefault mtight">e</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌋</span></span></span></span> 个点，于是接下来我们遍历每一个环，并得到每一个环的大小 size，对答案加上 size / 2 的贡献。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[10.21学习总结]]></title>
         <id>https://IceFake.github.io/post/RhBLYRA7D/</id>
@@ -405,40 +437,6 @@ whlie(x) {
 转移就可以这样写：</p>
 <pre><code class="language-cpp">Rep(i,0,up) tem += dfs(pos - 1, sum + i, (i == up) &amp;&amp; limit, tot);
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[成都七日游之游记]]></title>
-        <id>https://IceFake.github.io/post/mrBGZCdh0/</id>
-        <link href="https://IceFake.github.io/post/mrBGZCdh0/">
-        </link>
-        <updated>2020-10-02T08:48:34.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="一些其他的">一些其他的...</h3>
-<p><a href="https://www.zybuluo.com/Lovelotus/note/1745053">做题记录</a><br>
-<a href="https://www.zybuluo.com/Lovelotus/note/1746377">学习笔记</a></p>
-<h2 id="day-0"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi><mi>a</mi><mi>y</mi><mtext> </mtext><mn>0</mn></mrow><annotation encoding="application/x-tex">Day\ 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace"> </span><span class="mord">0</span></span></span></span></h2>
-<p>坐了7个多小时的火车，车上睡了1个半小时，结果醒来就发现Xinxie已经连切5道题了，整个人就郁闷了。</p>
-<p>到酒店的时候就差不多已经5点了，成都的口味主要还是麻，但不是很辣，晚餐吃的还不错，只是不知道以lubenwei为首的几个人为啥要每人去买一份<strong>臭豆腐</strong>。。。</p>
-<p>晚上被一道很<strong>meimei</strong>的题卡了2个小时，具体的记录在<a href="">做题记录</a>里面。3分钟知道怎么做了，结果调了2个小时硬是没有调出来。<br>
-<img src="https://s1.ax1x.com/2020/10/02/0l30MR.png" alt="" loading="lazy"></p>
-<p>夜宵吃的是<strong>芒果西米露</strong>，味道还nice。</p>
-<h2 id="day-1"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi><mi>a</mi><mi>y</mi><mtext> </mtext><mn>1</mn></mrow><annotation encoding="application/x-tex">Day\ 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace"> </span><span class="mord">1</span></span></span></span></h2>
-<p>7点才起（<s>闹钟6点多响了被我反手摁掉了。。。</s>），被Xinxie从床上逼起来，反手就是 “%Xinxie” 。</p>
-<p>那么热闹的小食街早上竟然只有包子吃QAQ。</p>
-<p>刚刚打开电脑就看到这个。。。<br>
-<img src="https://s1.ax1x.com/2020/10/02/0l184e.jpg" alt="" loading="lazy"></p>
-<p>上午考了一场 <strong>普及+/提高-</strong> 的考试，3.5h-3题。总之考得有点懵，3道题的分数都不属于正常的分数。。。本来的预估分是100+70+0，结果T2的暴搜写挂了，出来只有90+20+10，后面数据重做就只有90+20+0了QAQ</p>
-<p>晚上终于吃到了成都的火锅，味道还可以，就是量有点少，吃不饱。。。</p>
-<p>下午学了一下午的dp，自我感觉——呃呃呃，反正就那样。</p>
-<p>夜宵吃的烧烤，<strong>烤土豆片</strong>的确蛮辣QAQ。Masky吃的太少了，害的我一个人吃了三十多串<strong>烤肉、五花肉和牛肉</strong></p>
-<p>于是我成功上火了。。。（明天一定吃的清淡一点！！！</p>
-<h2 id="day-2"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi><mi>a</mi><mi>y</mi><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">Day\ 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace"> </span><span class="mord">2</span></span></span></span></h2>
-<p>又是早上7点被从床上逼下来，不过今天是Masky。。。以为我们是起的最晚的，结果在吃早餐的时候打电话准备 “%Xinxie” 的时候电话铃声才把他叫醒。。。</p>
-<blockquote>
-<p>每天起床第一巨，仙膜Xinxie贞的墙。</p>
-</blockquote>
-<p>早餐一杯豆浆就没了，清淡饮食，修仙ing。</p>
-<p>上午依旧是学dp，坐在贞，lemonfor和朱神之间，压力贼大，每次一道题被放出来就大多被他们秒了，我坐在中间一脸懵逼，简直自闭。</p>
 ]]></content>
     </entry>
 </feed>

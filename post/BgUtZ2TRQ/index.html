@@ -2,23 +2,21 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | IceFake&#39;s Blog</title>
+<title>10.22学习总结 | IceFake&#39;s Blog</title>
 <link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603352495616">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://IceFake.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
+<link rel="alternate" type="application/atom+xml" title="10.22学习总结 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-作为我的第一个Blog，这里记录了我的很多东西，当然，还有一些水题的题解在我的洛谷博客里面，因为我太懒了QAQ，懒得把他们搬过来。。。
-👨‍💻 博主是谁
-是一个蒟蒻
-真名的话。..." />
+    <meta name="description" content="关于考试
+100 + 100 + 0 + 100 = 300
+T1：结论题。套一个求gcd的就过了。
+不过这个大样例给了两个互质的数，差点一举通过大样例，全 WA 。
+T2：优先队列维护返回贪心。
+记得判一下负的快乐值，（大样例不判也能过。..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -95,47 +93,51 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              10.22学习总结
             </h2>
             <div class="post-info">
               <span>
-                2020-05-31
+                2020-10-22
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+                <h2 id="关于考试">关于考试</h2>
+<p>100 + 100 + 0 + 100 = 300</p>
+<p><strong>T1</strong>：结论题。套一个求gcd的就过了。<br>
+不过这个大样例给了两个互质的数，差点一举通过大样例，全 WA 。</p>
+<p><strong>T2</strong>：优先队列维护返回贪心。<br>
+记得判一下负的快乐值，（大样例不判也能过。。。</p>
+<p><strong>T3</strong>：图论题。<br>
+考场上想了3个小时硬是没想出来，爆0。QAQ<br>
+后来下午问了朱神<br>
+下面是关于此题的做法：</p>
+<blockquote>
+<p>首先对于每一个 p[i]，从 i 向 p[i] 连一条有向边。<br>
+那么题目就可以转化为：改变其中最少的边，从 0 开始遍历图上所有的点然后回到 0，使得该路线的字典序最小<br>
+然后我们将每一个环（除了包含0的那个环，暂且称之为初始环）中最小的点放入一个队列中，每次将初始环中下一位与队首进行比较。</p>
 </blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>作为我的第一个Blog，这里记录了我的很多东西，当然，还有一些水题的题解在我的<a href="https://www.luogu.com.cn/user/54713">洛谷博客</a>里面，因为我太懒了QAQ，懒得把他们搬过来。。。</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>是一个蒟蒻<br>
-真名的话。。。匿死！！！<br>
-其他各种名字：IceFake, Lovelotus, ZeroCold, 艾律稚朗堕。。。。。。</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>貌似有很多QAQ</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>由于我太弱了，只有QQ。。。<br>
-QQ：2745186036<br>
-e-mail：2745186036@qq.com（显然）</p>
-<h2 id="关于gridea的使用说明"><a href="https://zhuanlan.zhihu.com/p/64034679">关于Gridea的使用说明</a></h2>
+<p><strong>T4</strong>：贪心 + 一点点跑图<br>
+<s>莫名其妙地过了大样例</s><br>
+分析：<strong>对于每一个点，它地出度一定为 1。</strong><br>
+于是我们先统计每一个点的入度 in[i]，然后考虑贪心，如果一个点入读为 0，那这个点是一定不能扔到世界中去的，必须拿在手中，那么我们将该点所限制的点扔到世界中就一定是最优的。</p>
+<blockquote>
+<p>（因为这个被扔到世界中的点最多也只能限制一个点，若它被拿在手中也只能将它所限制的唯一一个点扔出，而这样反而浪费了之前这个入读为 0 的点 —— 它被拿在手中而且毫无贡献。）</p>
+</blockquote>
+<p>接下来我们就找出所有入度为 0 的点，将它们全部拿在手中，并扔出所有它们所限制的点，并将 其限制点 <strong>所限制 的 点 的 入度</strong> 减一，并判断该点入度是否为 0。<br>
+进行以上操作之后，就只剩下若干个环，而对于每一个环，我们发现最多只能扔出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⌊</mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi></mrow><mn>2</mn></mfrac><mo>⌋</mo></mrow><annotation encoding="application/x-tex">\lfloor \frac{size}{2} \rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.200664em;vertical-align:-0.345em;"></span><span class="mopen">⌊</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.855664em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span><span class="mord mathdefault mtight">e</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌋</span></span></span></span> 个点，于是接下来我们遍历每一个环，并得到每一个环的大小 size，对答案加上 size / 2 的贡献。</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-<li><a href="#%E5%85%B3%E4%BA%8Egridea%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">关于Gridea的使用说明</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E8%80%83%E8%AF%95">关于考试</a></li>
 </ul>
 </li>
 </ul>
@@ -145,6 +147,15 @@ e-mail：2745186036@qq.com（显然）</p>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://IceFake.github.io/post/RhBLYRA7D/">
+              <h3 class="post-title">
+                10.21学习总结
+              </h3>
+            </a>
+          </div>
         
 
         
