@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-22T07:45:44.478Z</updated>
+    <updated>2020-10-22T07:56:23.789Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -29,7 +29,7 @@
 <blockquote>
 <p>首先对于每一个 p[i]，从 i 向 p[i] 连一条有向边。<br>
 那么题目就可以转化为：改变其中最少的边，从 0 开始遍历图上所有的点然后回到 0，使得该路线的字典序最小<br>
-然后我们将每一个环（除了包含0的那个环，暂且称之为初始环）中最小的点放入一个队列中，每次将初始环中下一位与队首进行比较。</p>
+然后我们将每一个环（除了包含0的那个环，暂且称之为初始环）中最小的点放入一个队列中，每次将初始环中下一位与队首进行比较，如果队首更小就连出去遍历所有环再回来，反之则比较下一位。</p>
 </blockquote>
 <p><strong>T4</strong>：贪心 + 一点点跑图<br>
 <s>莫名其妙地过了大样例</s><br>
@@ -40,6 +40,10 @@
 </blockquote>
 <p>接下来我们就找出所有入度为 0 的点，将它们全部拿在手中，并扔出所有它们所限制的点，并将 其限制点 <strong>所限制 的 点 的 入度</strong> 减一，并判断该点入度是否为 0。<br>
 进行以上操作之后，就只剩下若干个环，而对于每一个环，我们发现最多只能扔出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⌊</mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi></mrow><mn>2</mn></mfrac><mo>⌋</mo></mrow><annotation encoding="application/x-tex">\lfloor \frac{size}{2} \rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.200664em;vertical-align:-0.345em;"></span><span class="mopen">⌊</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.855664em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span><span class="mord mathdefault mtight">e</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌋</span></span></span></span> 个点，于是接下来我们遍历每一个环，并得到每一个环的大小 size，对答案加上 size / 2 的贡献。</p>
+<h2 id="练习记录">练习记录</h2>
+<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
     </entry>
     <entry>
