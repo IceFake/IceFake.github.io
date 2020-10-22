@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CF55D Beautiful numbers 题解 | IceFake&#39;s Blog</title>
-<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603368468460">
+<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603368583768">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://IceFake.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="CF55D Beautiful numbers 题解 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
@@ -11,12 +11,12 @@
 
 
 
-    <meta name="description" content="首先看到数据范围，9e189e189e18，再看题面，很明显的数位DP。
+    <meta name="description" content="题目传送门(原OJ)
+题目传送门(洛谷(有翻译))
+首先看到数据范围，9e189e189e18，再看题面，很明显的数位DP。
 需要注意的地方：
 000 可以整除所有数。。。
-答案可能会大于 181818 位，所以 intintint 存不下！！！
-分析
-然后我们先确定 dpdpdp 数组的下..." />
+答案可能会大于 181818 位，所以 intintint 存不下..." />
     <meta name="keywords" content="题解" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -26,7 +26,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://IceFake.github.io/">
-  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603368468460" alt="">
+  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603368583768" alt="">
   </a>
   <h1 class="site-title">
     IceFake&#39;s Blog
@@ -111,7 +111,9 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>首先看到数据范围，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>9</mn><mi>e</mi><mn>18</mn></mrow><annotation encoding="application/x-tex">9e18</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span><span class="mord mathdefault">e</span><span class="mord">1</span><span class="mord">8</span></span></span></span>，再看题面，很明显的数位DP。</p>
+                <p><a href="https://codeforces.com/contest/55/problem/D">题目传送门(原OJ)</a><br>
+<a href="https://www.luogu.com.cn/problem/CF55D">题目传送门(洛谷(有翻译))</a></p>
+<p>首先看到数据范围，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>9</mn><mi>e</mi><mn>18</mn></mrow><annotation encoding="application/x-tex">9e18</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span><span class="mord mathdefault">e</span><span class="mord">1</span><span class="mord">8</span></span></span></span>，再看题面，很明显的数位DP。</p>
 <h2 id="需要注意的地方">需要注意的地方：</h2>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 可以整除所有数。。。<br>
 答案可能会大于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>18</mn></mrow><annotation encoding="application/x-tex">18</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">8</span></span></span></span> 位，所以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">int</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span></span></span></span> 存不下！！！</p>
