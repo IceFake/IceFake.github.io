@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>做题记录 | IceFake&#39;s Blog</title>
-<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603438549309">
+<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603458965494">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://IceFake.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="做题记录 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
@@ -27,7 +27,7 @@ P2014 [CTSC1997..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://IceFake.github.io/">
-  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603438549309" alt="">
+  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603458965494" alt="">
   </a>
   <h1 class="site-title">
     IceFake&#39;s Blog
@@ -101,7 +101,7 @@ P2014 [CTSC1997..." />
                 2020-10-13
               </span>
               <span>
-                12 min read
+                13 min read
               </span>
               
                 <a href="https://IceFake.github.io/tag/note/" class="post-tag">
@@ -248,6 +248,12 @@ whlie(x) {
 上面三道题都差不多（ <s>三倍经验</s><br>
 主要就是 dp[pos][sum] 记忆化，dfs(pos - 1, sum + i, (i == up) &amp;&amp; limit) 进行转移。<br>
 评蓝还可以接受，评紫有点过了。。。</p>
+<h2 id="1023">10.23</h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="blue"><mrow><mi>A</mi><mi>T</mi><mn>5759</mn><mtext> </mtext><mi>T</mi><mi>h</mi><mi>R</mi><mi>E</mi><mi>E</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{blue}{AT5759\ ThREE}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord" style="color:blue;"><span class="mord mathdefault" style="color:blue;">A</span><span class="mord mathdefault" style="margin-right:0.13889em;color:blue;">T</span><span class="mord" style="color:blue;">5</span><span class="mord" style="color:blue;">7</span><span class="mord" style="color:blue;">5</span><span class="mord" style="color:blue;">9</span><span class="mspace" style="color:blue;"><span style="color:blue;"> </span></span><span class="mord mathdefault" style="margin-right:0.13889em;color:blue;">T</span><span class="mord mathdefault" style="color:blue;">h</span><span class="mord mathdefault" style="margin-right:0.00773em;color:blue;">R</span><span class="mord mathdefault" style="margin-right:0.05764em;color:blue;">E</span><span class="mord mathdefault" style="margin-right:0.05764em;color:blue;">E</span></span></span></span></span> <a href="https://atcoder.jp/contests/hitachi2020/submissions/17590007">record</a><br>
+考虑将每一个节点按照其深度进行染色，得出黑白两色点 cnt1 和 cnt2 个，然后进行 <strong>分类讨论</strong>：<br>
+若 <span class='katex-error' title='ParseError: KaTeX parse error: Expected &#039;EOF&#039;, got &#039;&amp;&#039; at position 23: …}{3} \leq cnt1 &amp;̲&amp; \frac{n}{3} \…'>\frac{n}{3} \leq cnt1 &amp;&amp; \frac{n}{3} \leq cnt2</span> ，则将所有 %3 为 1 的数填入黑点，%3 为 2 的数填入白点，剩下的空点用 %3 为 0 的数补齐。<br>
+若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>n</mi><mi>t</mi><mn>1</mn><mo>&lt;</mo><mfrac><mi>n</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">cnt1 &lt; \frac{n}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68354em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.040392em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> ，则将所有黑点填入 %3 为 0 的数。<br>
+若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>n</mi><mi>t</mi><mn>2</mn><mo>&lt;</mo><mfrac><mi>n</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">cnt2 &lt; \frac{n}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68354em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.040392em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> ，则将所有白点填入 %3 为 0 的数。</p>
 
               </div>
               <div class="toc-container">
@@ -274,6 +280,7 @@ whlie(x) {
 <li><a href="#1020">10.20</a></li>
 <li><a href="#1021">10.21</a></li>
 <li><a href="#1022">10.22</a></li>
+<li><a href="#1023">10.23</a></li>
 </ul>
 </li>
 </ul>
