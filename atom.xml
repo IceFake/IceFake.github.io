@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-22T16:11:55.962Z</updated>
+    <updated>2020-10-23T07:35:53.986Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[10.23学习总结]]></title>
+        <id>https://IceFake.github.io/post/psw-Vn-cY/</id>
+        <link href="https://IceFake.github.io/post/psw-Vn-cY/">
+        </link>
+        <updated>2020-10-23T07:24:47.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p>100 + 100 + 40 + 0</p>
+<p><strong>T1</strong>：找中位数。<br>
+貌似 O(n) 过掉了。。。<br>
+<s><code>nth_element</code> 是个好东西</s></p>
+<p><strong>T2</strong>：树形dp。<br>
+考虑枚举每一个连通块的最小值，并将其设为根节点跑树形dp。<br>
+用dp数组记录方案数，转移：</p>
+<pre><code class="language-cpp">dp[x] *= dp[v] + 1
+</code></pre>
+<p><strong>T3</strong>：二分。<br>
+写了个优先队列，预计拿80pts，结果前4个点挂了。。。</p>
+<p><strong>T4</strong>：线段树。<br>
+看到题目后，花了2个小时，洋洋洒洒敲了200+行的代码，然后炸了，zbl</p>
+<h2 id="练习记录">练习记录</h2>
+<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CF55D Beautiful numbers 题解]]></title>
         <id>https://IceFake.github.io/post/J7y1Lr0V5/</id>
@@ -367,41 +393,6 @@ else printf(&quot;No Answer!&quot;);
 然后写了一道线段树练手。</p>
 <p><strong>已复习知识点：栈，单源最短路（Dijkstra）</strong></p>
 <h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.14学习总结]]></title>
-        <id>https://IceFake.github.io/post/Octday14/</id>
-        <link href="https://IceFake.github.io/post/Octday14/">
-        </link>
-        <updated>2020-10-14T07:01:53.000Z</updated>
-        <content type="html"><![CDATA[<p>上午测试：<br>
-预计：60 + 100 + 100 + 50<br>
-实际：45 + 100 + 100 + 10<br>
-T1：二分 + 差分<br>
-T2：贪心<br>
-T3：树形DP<br>
-T4：状压DP</p>
-<p>二分出锅了。。。然后状压的确不行（虽然不知道为什么暴搜也写挂了。。。）</p>
-<p>考试历程：开始的时候花了30min看T1，然而并没有什么思路，T2看了一眼，感觉不太会。<br>
-T3很显然的一道树形DP，于是花了30min写了，但忽视了是子树而不是连通块。。。于是又花了20min修改（下次一定要先将条件看好再写代码）。<br>
-写完T3后看了一眼T4，很明显的状压DP，可惜掌握不好，只是花20min打了一个暴搜。<br>
-回头看了一眼T2，然后凭感觉打了一份贪心的代码，结果过了所有样例？<br>
-T1在最后1h左右想到可以二分，但没想到差分，于是打了一份O(wn logh)的代码，结果45pts，本来以为会TLE，结果二分错了，WA掉了。</p>
-<h3 id="关于做题的记录">关于做题的记录</h3>
-<p>在<a href="https://icefake.github.io/post/xg59kcjww/">这里</a></p>
-<h2 id="学习内容的话">学习内容的话。。。</h2>
-<blockquote>
-<h3 id="hash的两种方法">Hash的两种方法</h3>
-<h3 id="离散化的两种方法">离散化的两种方法</h3>
-<h3 id="然后发现map是个好东西qaq">然后发现map是个好东西QAQ</h3>
-<p>最后本来是去学hash的，结果把并查集学了一点。。。 <s>以及，更熟练地使用map</s><br>
-主要还是写了几道题练手。。。 <s>貌似水了好几道，水的题有点多 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></s><br>
-毕竟hash这种运用性比较强。。。</p>
-</blockquote>
-<p><strong>已复习知识点：二分答案，Hash，并查集</strong></p>
-<h2 id="明日计划">明日计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
     </entry>
