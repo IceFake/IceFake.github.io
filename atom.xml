@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-24T06:18:48.914Z</updated>
+    <updated>2020-10-24T06:34:40.637Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -11,12 +11,32 @@
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
     <entry>
+        <title type="html"><![CDATA[10.24学习总结]]></title>
+        <id>https://IceFake.github.io/post/GYYt84JMA/</id>
+        <link href="https://IceFake.github.io/post/GYYt84JMA/">
+        </link>
+        <updated>2020-10-24T06:20:22.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="考试">考试</h2>
+<p>状态不好，老是想睡觉。。。<br>
+只有 60 + 55 + 0 + 0 = 115<br>
+预估是100 + 50 + 0 + 0</p>
+<p><strong>T1</strong>：用 map 写了个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2 log_2 n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 的，由于常数过大被卡了。。。QAQ<br>
+但朱神没有被卡。。。果然，朱神自带分数常数。。。</p>
+<p><strong>T2</strong>：矩阵乘法。<br>
+这个东西还是有点不会，只写了个记忆化搜索，55ptsQAQ。</p>
+<p><strong>T3</strong>：最小生成树。<br>
+<s>我能说还是不太会吗？</s></p>
+<p><strong>T4</strong>：</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[10.23学习总结]]></title>
         <id>https://IceFake.github.io/post/psw-Vn-cY/</id>
         <link href="https://IceFake.github.io/post/psw-Vn-cY/">
         </link>
         <updated>2020-10-23T07:24:47.000Z</updated>
         <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p><a href="https://www.luogu.com.cn/fe/api/problem/downloadAttachment/30cix32b">考试题目</a></p>
 <p>100 + 100 + 40 + 0</p>
 <p><strong>T1</strong>：找中位数。<br>
 貌似 O(n) 过掉了。。。<br>
@@ -370,34 +390,6 @@ else printf(&quot;No Answer!&quot;);
 <p>然后，复习了一点点数论知识。<br>
 重新证明了一遍欧拉定理（感觉没啥用QAQ<br>
 于是，我成功地忘记了今天要复习SPAF和Floyd来着。。。（下次一定 不会了）</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.15学习总结]]></title>
-        <id>https://IceFake.github.io/post/BdHj7-8JE/</id>
-        <link href="https://IceFake.github.io/post/BdHj7-8JE/">
-        </link>
-        <updated>2020-10-15T08:27:09.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
-<p>只有T1和T2有分，170，rank11垫底QAQ</p>
-<p><strong>T1</strong>：前缀和+递推，忘记用前缀和了。。。但貌似用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> + 优化 + （ <s>dabiao</s> ）能过90。。。</p>
-<p><strong>T2</strong>：联通图的暴力遍历</p>
-<p><strong>T3</strong>：最短路径树之类的。。。 <s>6个月没怎么写图论题了，连dijkstra都忘记怎么写了</s> （逃<br>
-这道题先用dijkstra跑一遍单源最短路，然后判断哪些边改变会对最短路有影响，并且优先“公路”。</p>
-<p><strong>T4</strong>：dp，然而考场上并没有想出来，然后就——GG了。。。</p>
-<p>然后突然发现昨天的T3貌似看错题了。。。（但是过了？<br>
-重新写了一遍昨天的T3，发现我昨天想复杂了。。。</p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>想了两道CF2000分左右的思维题（ <s>但是还没写完，只想出了做法QAQ</s> ）</p>
-<h2 id="总结">总结</h2>
-<p>更正题目的时间有点久QAQ<br>
-然后就是考试数据比较水，过了不一定代表对了，因此就算是过了的题也可以交流一下做法，或者是在各个OJ上找到相似的题目提交检验。</p>
-<p>意识到自己还有很多板子题没怎么打过，练了几道数据结构的板子题。<br>
-然后写了一道线段树练手。</p>
-<p><strong>已复习知识点：栈，单源最短路（Dijkstra）</strong></p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>

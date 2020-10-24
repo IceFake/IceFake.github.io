@@ -2,21 +2,21 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>10.17学习总结 | IceFake&#39;s Blog</title>
+<title>10.24学习总结 | IceFake&#39;s Blog</title>
 <link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603521277548">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://IceFake.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="10.17学习总结 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
+<link rel="alternate" type="application/atom+xml" title="10.24学习总结 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="关于考试
-关于分数： 95 + 90 + 100 + 80
-T1：先 n×mn\times mn×m 预处理出每条线上的“青蛙”总数，然后再扫一遍找到最小值。
-一定要记得判边界QAQ
-一开始刚打这道题代码的时候，还定义了一个bool变量判边..." />
-    <meta name="keywords" content="每日总结" />
+    <meta name="description" content="考试
+状态不好，老是想睡觉。。。
+只有 60 + 55 + 0 + 0 = 115
+预估是100 + 50 + 0 + 0
+T1：用 map 写了个 O(n2log2n)O(n^2 log_2 n)O(n2log2​n) 的，由于常数过大被..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -92,55 +92,38 @@ T1：先 n×mn\times mn×m 预处理出每条线上的“青蛙”总数，然�
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              10.17学习总结
+              10.24学习总结
             </h2>
             <div class="post-info">
               <span>
-                2020-10-17
+                2020-10-24
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
-              
-                <a href="https://IceFake.github.io/tag/wTq1xK2PZ/" class="post-tag">
-                  # 每日总结
-                </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="关于考试">关于考试</h2>
-<p>关于分数： 95 + 90 + 100 + 80</p>
-<p><strong>T1</strong>：先 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\times m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 预处理出每条线上的“青蛙”总数，然后再扫一遍找到最小值。<br>
-一定要记得判边界QAQ<br>
-一开始刚打这道题代码的时候，还定义了一个bool变量判边界，还赋值了，结果最后输出结果的时候忘记判了。。。 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
-<p><strong>T2</strong>： 二分答案，然后加亿点点贪心。<br>
-不过要注意是从0点跳到n+1而不是n，这里我又挂掉了10pts。。。又是边界问题。。。</p>
-<p><strong>T3</strong>：唯一一道过了的题QAQ（感动）</p>
-<p><strong>T4</strong>：背包dp + 一点点转化 + 二分 + 离线操作。<br>
-听说<strong>朱神</strong>好像没有离线也过了，还跑得很快。QAQ（好像是把dp数组开成二维的（毕竟n比较小<br>
-考试的时候先是打了个40pts的背包。。。<br>
-然后突然发现如果将其按照时间排序可以优化掉一层循环，于是就加了离线，60pts。<br>
-然后发现v和c互换就可以进行正常的背包dp，于是改了一下并加了一个<strong>upper_bound</strong>查找ans。<br>
-本来是可以过的。。。但是我貌似把背包dp最里面的一层循环的上界开大了，于是——就超时了，改小之后就过了。。。</p>
-<p><strong>考试总结</strong>：别的不说，边界问题一定要注意！！！这次是挂了15pts，数据强一点或者捆绑测试说不定就无了。。。</p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>下午写了几道二分。。。但好像把分块给咕掉了，明天放假的话，可以把分块补一下。<br>
-晚上本来想打CF的，但九点半还没到家，就只后来稍微看了下题，交了一道题的代码，打算有时间就把剩下几道题中能力范围左右的题写了。<br>
-总的来说今天的状态还可以，希望能够每天保持。</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
+                <h2 id="考试">考试</h2>
+<p>状态不好，老是想睡觉。。。<br>
+只有 60 + 55 + 0 + 0 = 115<br>
+预估是100 + 50 + 0 + 0</p>
+<p><strong>T1</strong>：用 map 写了个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2 log_2 n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 的，由于常数过大被卡了。。。QAQ<br>
+但朱神没有被卡。。。果然，朱神自带分数常数。。。</p>
+<p><strong>T2</strong>：矩阵乘法。<br>
+这个东西还是有点不会，只写了个记忆化搜索，55ptsQAQ。</p>
+<p><strong>T3</strong>：最小生成树。<br>
+<s>我能说还是不太会吗？</s></p>
+<p><strong>T4</strong>：</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E8%80%83%E8%AF%95">关于考试</a></li>
-<li><a href="#%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95">练习记录</a></li>
-<li><a href="#%E8%AE%A1%E5%88%92">计划</a></li>
+<li><a href="#%E8%80%83%E8%AF%95">考试</a></li>
 </ul>
 </li>
 </ul>
@@ -153,9 +136,9 @@ T1：先 n×mn\times mn×m 预处理出每条线上的“青蛙”总数，然�
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://IceFake.github.io/post/HPu_AwROT/">
+            <a href="https://IceFake.github.io/post/psw-Vn-cY/">
               <h3 class="post-title">
-                10.16学习总结
+                10.23学习总结
               </h3>
             </a>
           </div>
