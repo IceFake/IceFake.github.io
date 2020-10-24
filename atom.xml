@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-24T06:34:40.637Z</updated>
+    <updated>2020-10-24T06:39:52.598Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -17,6 +17,7 @@
         </link>
         <updated>2020-10-24T06:20:22.000Z</updated>
         <content type="html"><![CDATA[<h2 id="考试">考试</h2>
+<p><a href="https://www.luogu.com.cn/fe/api/problem/downloadAttachment/fk93xd8c">考试题目</a></p>
 <p>状态不好，老是想睡觉。。。<br>
 只有 60 + 55 + 0 + 0 = 115<br>
 预估是100 + 50 + 0 + 0</p>
