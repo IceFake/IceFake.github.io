@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-24T08:08:46.393Z</updated>
+    <updated>2020-10-25T13:26:16.225Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[10.24学习总结]]></title>
+        <title type="html"><![CDATA[10.24 ~ 10.25学习总结]]></title>
         <id>https://IceFake.github.io/post/GYYt84JMA/</id>
         <link href="https://IceFake.github.io/post/GYYt84JMA/">
         </link>
@@ -26,8 +26,14 @@
 <p><strong>T2</strong>：矩阵乘法。<br>
 这个东西还是有点不会，只写了个记忆化搜索，55ptsQAQ。</p>
 <p><strong>T3</strong>：最小生成树。<br>
-<s>我能说还是不太会吗？</s></p>
+<s>我能说还是不太会吗？</s><br>
+于是学了一下午的最小生成树，还没顺过来。。。</p>
 <p><strong>T4</strong>：</p>
+<h2 id="关于练习">关于练习</h2>
+<p>10.25 晚上打了一场CF Div.2。。。<br>
+被 C 卡了。。。QAQ</p>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
     </entry>
     <entry>
