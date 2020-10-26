@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-25T13:26:16.225Z</updated>
+    <updated>2020-10-26T07:09:31.412Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[10.26学习总结]]></title>
+        <id>https://IceFake.github.io/post/NxCG63lfu/</id>
+        <link href="https://IceFake.github.io/post/NxCG63lfu/">
+        </link>
+        <updated>2020-10-26T06:16:53.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p>0 + 80 + 100 + 100 = 280</p>
+<p><strong>T1</strong>：dfs + 剪枝。<br>
+一举通过大样例然后全WA。。。</p>
+<p><strong>T2</strong>：hash。<br>
+用map被卡了。。。<br>
+下次用<code>unordered_map</code> + fread，（逃。。。</p>
+<p><strong>T3</strong>：树形dp。<br>
+主要是memset写得有点晕。</p>
+<p><strong>T4</strong>：贪心就可以了。<br>
+先找到整个数列中最大的，跳过去，然后再找到后面中最大的，跳过去，以此类推。</p>
+<h2 id="练习记录">练习记录</h2>
+<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[10.24 ~ 10.25学习总结]]></title>
         <id>https://IceFake.github.io/post/GYYt84JMA/</id>
@@ -355,49 +378,6 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <p>下午写了几道二分。。。但好像把分块给咕掉了，明天放假的话，可以把分块补一下。<br>
 晚上本来想打CF的，但九点半还没到家，就只后来稍微看了下题，交了一道题的代码，打算有时间就把剩下几道题中能力范围左右的题写了。<br>
 总的来说今天的状态还可以，希望能够每天保持。</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.16学习总结]]></title>
-        <id>https://IceFake.github.io/post/HPu_AwROT/</id>
-        <link href="https://IceFake.github.io/post/HPu_AwROT/">
-        </link>
-        <updated>2020-10-16T08:04:47.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
-<p>0 + 100 + 0 + 10</p>
-<p><strong>T1</strong>：应该算是贪心。<br>
-考试的时候，凭感觉进行贪心，写了大概20min，然后一举通过大样例，结果交上去全WA。QAQ<br>
-下午更正的时候更正了30min，才发现错在一个break打成了continue。。。<br>
-以后不能过了大样例就不检查了。。。同时自己还可以造几个特殊一点的数据测试程序。</p>
-<p><strong>T2</strong>：找规律，没什么好说的。</p>
-<p><strong>T3</strong>：单调栈+二分，也可以用线段树。。。<br>
-更正了1个多小时，才写出来，然后还是懵的，后来又想了好久才明白。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
-<p><strong>T4</strong>：并查集，一个区间没有贡献当且仅当它能被其他区间所表示。<br>
-考场上用了2个小时写这道题，想的是一个大概是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>m</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的做法，然后用线段树应该是可以优化到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m logm)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span> 的，结果判断区间贡献的方法错了，然后就挂成10pts。（ <s>竟然还有10pts</s><br>
-我觉得线段树真的可以做。。。（虽然写了2个小时 + 后来想了30min 都没写出来）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p><a href="https://blog.csdn.net/qq_41713256/article/details/80805338">拓扑排序</a></p>
-<p>更新了一下拓扑排序的代码（写法）</p>
-<pre><code class="language-cpp">Rep(i,1,n) if(!in[i]) q.push(i);
-while(!q.empty()) {
-    int x = q.front(); q.pop();
-    ans[++ tot] = x;
-    for(int i = head[x]; i ; i = f[i].nxt) {
-        int v = f[i].to; dec(in[v]);
-        if(!in[v]) q.push(v);  
-    }
-}
-if(tot == n) Rep(i,1,tot) printf(&quot;%lld &quot;, ans[i]);
-else printf(&quot;No Answer!&quot;);
-</code></pre>
-<p>写了三道拓扑排序的板题，感觉还行，有两道都是一遍编译过并且AC。</p>
-<p>在CF上找了一道最近的比赛中的dp题写保持感觉。。。</p>
-<p>然后，复习了一点点数论知识。<br>
-重新证明了一遍欧拉定理（感觉没啥用QAQ<br>
-于是，我成功地忘记了今天要复习SPAF和Floyd来着。。。（下次一定 不会了）</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
