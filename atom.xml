@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-26T15:47:10.665Z</updated>
+    <updated>2020-10-26T15:50:38.623Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -35,8 +35,9 @@
 <p>学习Tarjan和复习二分图<br>
 Tarjan模板：<br>
 <img src="https://IceFake.github.io//post-images/1603726783344.png" alt="" loading="lazy"><br>
-顺带写了几道二分图的题。。。</p>
+顺带写了一道二分图的题。。。</p>
 <p>感觉好久都没怎碰图论了，有那么一点点陌生QAQ</p>
+<p>最近题写得有点少，明天多写几道Tarjan和二分图的题。</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
