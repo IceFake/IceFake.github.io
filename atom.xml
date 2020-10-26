@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-26T07:09:31.412Z</updated>
+    <updated>2020-10-26T15:47:10.665Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -19,7 +19,8 @@
         <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
 <p>0 + 80 + 100 + 100 = 280</p>
 <p><strong>T1</strong>：dfs + 剪枝。<br>
-一举通过大样例然后全WA。。。</p>
+一举通过大样例然后全WA。。。<br>
+最后发现是自己对于标记的还原写错了QAQ。</p>
 <p><strong>T2</strong>：hash。<br>
 用map被卡了。。。<br>
 下次用<code>unordered_map</code> + fread，（逃。。。</p>
@@ -29,6 +30,13 @@
 先找到整个数列中最大的，跳过去，然后再找到后面中最大的，跳过去，以此类推。</p>
 <h2 id="练习记录">练习记录</h2>
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<p>学了一下fread。。。<br>
+<img src="https://IceFake.github.io//post-images/1603727223961.png" alt="" loading="lazy"></p>
+<p>学习Tarjan和复习二分图<br>
+Tarjan模板：<br>
+<img src="https://IceFake.github.io//post-images/1603726783344.png" alt="" loading="lazy"><br>
+顺带写了几道二分图的题。。。</p>
+<p>感觉好久都没怎碰图论了，有那么一点点陌生QAQ</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
