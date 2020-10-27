@@ -1,0 +1,422 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>10.27学习总结 | IceFake&#39;s Blog</title>
+<link rel="shortcut icon" href="https://IceFake.github.io//favicon.ico?v=1603806186289">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://IceFake.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="10.27学习总结 | IceFake&#39;s Blog - Atom Feed" href="https://IceFake.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="关于考试
+100 + 100 + 0 + 0 = 200
+T1：优先队列。
+算是签到题吧，代码量整场考试最小。
+T2：最短路。
+先用dij处理出以每一个途径点为起点的dis，用dfs暴力枚举顺序，找到最小值。
+T3：二分答案。
+看错输入方式..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://IceFake.github.io/">
+  <img class="avatar" src="https://IceFake.github.io//images/avatar.png?v=1603806186289" alt="">
+  </a>
+  <h1 class="site-title">
+    IceFake&#39;s Blog
+  </h1>
+  <p class="site-description">
+    Lovelotus
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://IceFake.github.io/post/blog" class="menu">
+          主页
+        </a>
+      
+    
+      
+        <a href="/" class="menu">
+          文章
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          分类
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/IceFake" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/icefake" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              10.27学习总结
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-10-27
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="关于考试">关于考试</h2>
+<p>100 + 100 + 0 + 0 = 200</p>
+<p><strong>T1</strong>：优先队列。<br>
+算是签到题吧，代码量整场考试最小。</p>
+<p><strong>T2</strong>：最短路。<br>
+先用dij处理出以每一个途径点为起点的dis，用dfs暴力枚举顺序，找到最小值。</p>
+<p><strong>T3</strong>：二分答案。<br>
+看错输入方式了QAQ。</p>
+<p><strong>T4</strong>：树链剖分 + 线段树合并。<br>
+淦。。。</p>
+<h2 id="练习记录">练习记录</h2>
+<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<p>下午学了树链剖分，本来打算晚上写完树链剖分的板子就把线段树合并学了的。<br>
+结果——敲了一节晚自习的板子，又调了一节晚自习。<br>
+码量一大思路就有点不清晰。。。码少了。。。</p>
+<p><strong>树链剖分模板</strong></p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define inc(i) (++ (i))
+#define dec(i) (-- (i))
+#define Rep(i,a,b) for(register int i = (a), i##Limit = (b); i &lt;= i##Limit; inc(i))
+#define Dep(i,a,b) for(register int i = (a), i##Limit = (b); i &gt;= i##Limit; dec(i))
+#define left_node node &lt;&lt; 1
+#define right_node node &lt;&lt; 1 | 1
+#define _(x) ((x) %= mod)
+
+using namespace std;
+
+const int inf = 0x3f3f3f3f, INF = 0x7f7f7f7f7f7f7f;
+const int maxn = 100010;
+
+int read() {
+	int x=0,w=1; char ch=0;
+	while(ch&lt;'0'||ch&gt;'9') {if(ch=='-') w=-1; ch=getchar();}
+	while(ch&gt;='0'&amp;&amp;ch&lt;='9') x=x*10+ch-'0', ch=getchar();
+	return x*w;
+}
+
+int mod, n, m, s, dfncnt = 0, x, y, k, u, v, w, tem, LCA;
+int hson[maxn], top[maxn], dfn[maxn], deep[maxn], fa[maxn], size[maxn], num[maxn], arr[maxn];
+
+int head[maxn], edgecnt = 0;
+struct Edge{
+	int nxt, to;
+}edge[maxn &lt;&lt; 1];
+
+void add_edge(int u, int v) {
+	edge[inc(edgecnt)].nxt = head[u];
+	head[u] = edgecnt;
+	edge[edgecnt].to = v;
+}
+
+struct segment_tree {
+	int tree[maxn &lt;&lt; 2], lazy[maxn &lt;&lt; 2];
+
+	void pushup(int node) {
+		tree[node] = (tree[left_node] + tree[right_node]) % mod;
+		return ;
+	}
+
+	void build_tree(int node, int sta, int end) {
+		if(sta == end) {
+			tree[node] = num[sta] % mod;
+			return ;
+		}
+		int mid = sta + end &gt;&gt; 1;
+		build_tree(left_node, sta, mid);
+		build_tree(right_node, mid + 1, end);
+		pushup(node);
+	}
+
+	void pushdown(int node, int sta, int end) {
+		if(!lazy[node]) return ;
+		int mid = sta + end &gt;&gt; 1;
+		lazy[left_node] += lazy[node], _(lazy[left_node]);
+		lazy[right_node] += lazy[node], _(lazy[right_node]);
+		tree[left_node] += (mid - sta + 1) * lazy[node] % mod, _(tree[left_node]);
+		tree[right_node] += (end - mid) * lazy[node] % mod, _(tree[right_node]);
+		lazy[node] = 0;
+	}
+
+	void update(int node, int sta, int end) {
+		if(x &gt; end || sta &gt; y) return ;
+		if(x &lt;= sta &amp;&amp; y &gt;= end) {
+			lazy[node] += k, _(lazy[node]);
+			tree[node] += (end - sta + 1) * k % mod, _(tree[node]);
+			return ;
+		}
+		pushdown(node, sta, end);
+		int mid = (sta + end) &gt;&gt; 1;
+		update(left_node, sta, mid);
+		update(right_node, mid + 1, end);
+		pushup(node);
+	}
+
+	int query(int node, int sta, int end) {
+		if(x &gt; end || y &lt; sta) return 0;
+		if(x &lt;= sta &amp;&amp; end &lt;= y) return tree[node];
+		pushdown(node, sta, end);
+		int mid = (sta + end) &gt;&gt; 1;
+		return (query(left_node, sta, mid) + query(right_node, mid + 1, end)) % mod;
+	}
+} st;
+
+void dfs1(int x) {
+	int Max = -1;
+	size[x] = 1; deep[x] = deep[fa[x]] + 1;
+	for(int i = head[x]; i ; i = edge[i].nxt) {
+		int v = edge[i].to;
+		if(fa[x] == v) continue;
+		fa[v] = x; dfs1(v);
+		size[x] += size[v];
+		if(Max &lt; size[v]) Max = size[v], hson[x] = v;
+	}
+}
+
+void dfs2(int x, int topf) {
+	dfn[x] = inc(dfncnt);
+	top[x] = topf; num[dfncnt] = arr[x];
+	if(!hson[x]) return ;
+	dfs2(hson[x], topf);
+	for(int i = head[x]; i ; i = edge[i].nxt) {
+		int v = edge[i].to;
+		if(fa[x] == v) continue;
+		if(hson[x] != v) dfs2(v, v); 
+	}
+}
+
+int lca(int u, int v) {
+	while(top[u] != top[v]) {
+		if(deep[top[u]] &gt; deep[top[v]]) u = fa[top[u]];
+		else v = fa[top[v]];
+	}
+	return (deep[u] &lt; deep[v] ? u : v);
+}
+
+void add(int u, int v, int w) {
+	while(top[u] != top[v]) {
+		x = dfn[top[u]]; y = dfn[u]; k = w;
+		st.update(1, 1, dfncnt);
+		u = fa[top[u]];
+	}
+	x = dfn[v]; y = dfn[u]; k = w;
+	st.update(1, 1, dfncnt);
+}
+
+int sum(int u, int v) {
+	int res = 0;
+	while(top[u] != top[v]) {
+		x = dfn[top[u]]; y = dfn[u];
+		res += st.query(1, 1, dfncnt), _(res);
+		u = fa[top[u]];
+	}
+	x = dfn[v]; y = dfn[u];
+	res += st.query(1, 1, dfncnt), _(res);
+	return res;
+}
+
+signed main()
+{
+	#ifndef ONLINE_JUDGE
+	freopen(&quot;test.in&quot;, &quot;r&quot;, stdin);
+	freopen(&quot;test.out&quot;, &quot;w&quot;, stdout);
+	#endif 
+	
+	n = read(); m = read(); s = read(); mod = read();
+	Rep(i,1,n) arr[i] = read();
+	Rep(i,1,n - 1) {
+		u = read(); v = read();
+		add_edge(u, v); add_edge(v, u);
+	}
+	fa[s] = s;
+	dfs1(s); dfs2(s, s);
+	st.build_tree(1, 1, dfncnt);
+	while(m --) {
+		int tem; tem = read();
+		if(tem == 1) {
+			u = read(); v = read(); w = read(), _(w);
+			LCA = lca(u, v);
+			add(u, LCA, w); add(v, LCA, w); add(LCA, LCA, mod - w);
+		}
+		else if(tem == 2) {
+			u = read(); v = read(); LCA = lca(u, v);
+			printf(&quot;%lld\n&quot;, ((sum(u, LCA) + sum(v, LCA)) % mod + mod - sum(LCA, LCA)) % mod);
+		}
+		else if(tem == 3) {
+			u = read(); w = read(), _(w); k = w;
+			x = dfn[u]; y = dfn[u] + size[u] - 1;
+			st.update(1, 1, dfncnt);
+		}
+		else {
+			u = read();
+			x = dfn[u]; y = dfn[u] + size[u] - 1;
+			printf(&quot;%lld\n&quot;, st.query(1, 1, dfncnt));
+		}
+	}
+	
+	return 0;
+}
+</code></pre>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%85%B3%E4%BA%8E%E8%80%83%E8%AF%95">关于考试</a></li>
+<li><a href="#%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95">练习记录</a></li>
+<li><a href="#%E8%AE%A1%E5%88%92">计划</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://IceFake.github.io/post/NxCG63lfu/">
+              <h3 class="post-title">
+                10.26学习总结
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'e28c8246821c8b0b733a',
+    clientSecret: '5a3b13367599afc470ef8f87420023580875bbc4',
+    repo: 'IceFake.github.io',
+    owner: 'IceFake',
+    admin: ['IceFake'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://IceFake.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

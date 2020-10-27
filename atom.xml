@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-26T15:50:38.623Z</updated>
+    <updated>2020-10-27T13:43:09.950Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,216 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[10.27学习总结]]></title>
+        <id>https://IceFake.github.io/post/ERNVaayHp/</id>
+        <link href="https://IceFake.github.io/post/ERNVaayHp/">
+        </link>
+        <updated>2020-10-27T13:34:42.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p>100 + 100 + 0 + 0 = 200</p>
+<p><strong>T1</strong>：优先队列。<br>
+算是签到题吧，代码量整场考试最小。</p>
+<p><strong>T2</strong>：最短路。<br>
+先用dij处理出以每一个途径点为起点的dis，用dfs暴力枚举顺序，找到最小值。</p>
+<p><strong>T3</strong>：二分答案。<br>
+看错输入方式了QAQ。</p>
+<p><strong>T4</strong>：树链剖分 + 线段树合并。<br>
+淦。。。</p>
+<h2 id="练习记录">练习记录</h2>
+<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<p>下午学了树链剖分，本来打算晚上写完树链剖分的板子就把线段树合并学了的。<br>
+结果——敲了一节晚自习的板子，又调了一节晚自习。<br>
+码量一大思路就有点不清晰。。。码少了。。。</p>
+<p><strong>树链剖分模板</strong></p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define inc(i) (++ (i))
+#define dec(i) (-- (i))
+#define Rep(i,a,b) for(register int i = (a), i##Limit = (b); i &lt;= i##Limit; inc(i))
+#define Dep(i,a,b) for(register int i = (a), i##Limit = (b); i &gt;= i##Limit; dec(i))
+#define left_node node &lt;&lt; 1
+#define right_node node &lt;&lt; 1 | 1
+#define _(x) ((x) %= mod)
+
+using namespace std;
+
+const int inf = 0x3f3f3f3f, INF = 0x7f7f7f7f7f7f7f;
+const int maxn = 100010;
+
+int read() {
+	int x=0,w=1; char ch=0;
+	while(ch&lt;'0'||ch&gt;'9') {if(ch=='-') w=-1; ch=getchar();}
+	while(ch&gt;='0'&amp;&amp;ch&lt;='9') x=x*10+ch-'0', ch=getchar();
+	return x*w;
+}
+
+int mod, n, m, s, dfncnt = 0, x, y, k, u, v, w, tem, LCA;
+int hson[maxn], top[maxn], dfn[maxn], deep[maxn], fa[maxn], size[maxn], num[maxn], arr[maxn];
+
+int head[maxn], edgecnt = 0;
+struct Edge{
+	int nxt, to;
+}edge[maxn &lt;&lt; 1];
+
+void add_edge(int u, int v) {
+	edge[inc(edgecnt)].nxt = head[u];
+	head[u] = edgecnt;
+	edge[edgecnt].to = v;
+}
+
+struct segment_tree {
+	int tree[maxn &lt;&lt; 2], lazy[maxn &lt;&lt; 2];
+
+	void pushup(int node) {
+		tree[node] = (tree[left_node] + tree[right_node]) % mod;
+		return ;
+	}
+
+	void build_tree(int node, int sta, int end) {
+		if(sta == end) {
+			tree[node] = num[sta] % mod;
+			return ;
+		}
+		int mid = sta + end &gt;&gt; 1;
+		build_tree(left_node, sta, mid);
+		build_tree(right_node, mid + 1, end);
+		pushup(node);
+	}
+
+	void pushdown(int node, int sta, int end) {
+		if(!lazy[node]) return ;
+		int mid = sta + end &gt;&gt; 1;
+		lazy[left_node] += lazy[node], _(lazy[left_node]);
+		lazy[right_node] += lazy[node], _(lazy[right_node]);
+		tree[left_node] += (mid - sta + 1) * lazy[node] % mod, _(tree[left_node]);
+		tree[right_node] += (end - mid) * lazy[node] % mod, _(tree[right_node]);
+		lazy[node] = 0;
+	}
+
+	void update(int node, int sta, int end) {
+		if(x &gt; end || sta &gt; y) return ;
+		if(x &lt;= sta &amp;&amp; y &gt;= end) {
+			lazy[node] += k, _(lazy[node]);
+			tree[node] += (end - sta + 1) * k % mod, _(tree[node]);
+			return ;
+		}
+		pushdown(node, sta, end);
+		int mid = (sta + end) &gt;&gt; 1;
+		update(left_node, sta, mid);
+		update(right_node, mid + 1, end);
+		pushup(node);
+	}
+
+	int query(int node, int sta, int end) {
+		if(x &gt; end || y &lt; sta) return 0;
+		if(x &lt;= sta &amp;&amp; end &lt;= y) return tree[node];
+		pushdown(node, sta, end);
+		int mid = (sta + end) &gt;&gt; 1;
+		return (query(left_node, sta, mid) + query(right_node, mid + 1, end)) % mod;
+	}
+} st;
+
+void dfs1(int x) {
+	int Max = -1;
+	size[x] = 1; deep[x] = deep[fa[x]] + 1;
+	for(int i = head[x]; i ; i = edge[i].nxt) {
+		int v = edge[i].to;
+		if(fa[x] == v) continue;
+		fa[v] = x; dfs1(v);
+		size[x] += size[v];
+		if(Max &lt; size[v]) Max = size[v], hson[x] = v;
+	}
+}
+
+void dfs2(int x, int topf) {
+	dfn[x] = inc(dfncnt);
+	top[x] = topf; num[dfncnt] = arr[x];
+	if(!hson[x]) return ;
+	dfs2(hson[x], topf);
+	for(int i = head[x]; i ; i = edge[i].nxt) {
+		int v = edge[i].to;
+		if(fa[x] == v) continue;
+		if(hson[x] != v) dfs2(v, v); 
+	}
+}
+
+int lca(int u, int v) {
+	while(top[u] != top[v]) {
+		if(deep[top[u]] &gt; deep[top[v]]) u = fa[top[u]];
+		else v = fa[top[v]];
+	}
+	return (deep[u] &lt; deep[v] ? u : v);
+}
+
+void add(int u, int v, int w) {
+	while(top[u] != top[v]) {
+		x = dfn[top[u]]; y = dfn[u]; k = w;
+		st.update(1, 1, dfncnt);
+		u = fa[top[u]];
+	}
+	x = dfn[v]; y = dfn[u]; k = w;
+	st.update(1, 1, dfncnt);
+}
+
+int sum(int u, int v) {
+	int res = 0;
+	while(top[u] != top[v]) {
+		x = dfn[top[u]]; y = dfn[u];
+		res += st.query(1, 1, dfncnt), _(res);
+		u = fa[top[u]];
+	}
+	x = dfn[v]; y = dfn[u];
+	res += st.query(1, 1, dfncnt), _(res);
+	return res;
+}
+
+signed main()
+{
+	#ifndef ONLINE_JUDGE
+	freopen(&quot;test.in&quot;, &quot;r&quot;, stdin);
+	freopen(&quot;test.out&quot;, &quot;w&quot;, stdout);
+	#endif 
+	
+	n = read(); m = read(); s = read(); mod = read();
+	Rep(i,1,n) arr[i] = read();
+	Rep(i,1,n - 1) {
+		u = read(); v = read();
+		add_edge(u, v); add_edge(v, u);
+	}
+	fa[s] = s;
+	dfs1(s); dfs2(s, s);
+	st.build_tree(1, 1, dfncnt);
+	while(m --) {
+		int tem; tem = read();
+		if(tem == 1) {
+			u = read(); v = read(); w = read(), _(w);
+			LCA = lca(u, v);
+			add(u, LCA, w); add(v, LCA, w); add(LCA, LCA, mod - w);
+		}
+		else if(tem == 2) {
+			u = read(); v = read(); LCA = lca(u, v);
+			printf(&quot;%lld\n&quot;, ((sum(u, LCA) + sum(v, LCA)) % mod + mod - sum(LCA, LCA)) % mod);
+		}
+		else if(tem == 3) {
+			u = read(); w = read(), _(w); k = w;
+			x = dfn[u]; y = dfn[u] + size[u] - 1;
+			st.update(1, 1, dfncnt);
+		}
+		else {
+			u = read();
+			x = dfn[u]; y = dfn[u] + size[u] - 1;
+			printf(&quot;%lld\n&quot;, st.query(1, 1, dfncnt));
+		}
+	}
+	
+	return 0;
+}
+</code></pre>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[10.26学习总结]]></title>
         <id>https://IceFake.github.io/post/NxCG63lfu/</id>
@@ -357,36 +567,6 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 小于100000的素数大约有9500个，所以我们只需要对这些素数进行分块，每个进行一次B操作，然后对于每个块进行一遍A操作。<br>
 打算明天把代码敲出来。</p>
 <p>明天早上迎接新难度的考试</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.17学习总结]]></title>
-        <id>https://IceFake.github.io/post/F40la38-Y/</id>
-        <link href="https://IceFake.github.io/post/F40la38-Y/">
-        </link>
-        <updated>2020-10-17T06:43:39.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
-<p>关于分数： 95 + 90 + 100 + 80</p>
-<p><strong>T1</strong>：先 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\times m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 预处理出每条线上的“青蛙”总数，然后再扫一遍找到最小值。<br>
-一定要记得判边界QAQ<br>
-一开始刚打这道题代码的时候，还定义了一个bool变量判边界，还赋值了，结果最后输出结果的时候忘记判了。。。 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>w</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">awa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">a</span></span></span></span></p>
-<p><strong>T2</strong>： 二分答案，然后加亿点点贪心。<br>
-不过要注意是从0点跳到n+1而不是n，这里我又挂掉了10pts。。。又是边界问题。。。</p>
-<p><strong>T3</strong>：唯一一道过了的题QAQ（感动）</p>
-<p><strong>T4</strong>：背包dp + 一点点转化 + 二分 + 离线操作。<br>
-听说<strong>朱神</strong>好像没有离线也过了，还跑得很快。QAQ（好像是把dp数组开成二维的（毕竟n比较小<br>
-考试的时候先是打了个40pts的背包。。。<br>
-然后突然发现如果将其按照时间排序可以优化掉一层循环，于是就加了离线，60pts。<br>
-然后发现v和c互换就可以进行正常的背包dp，于是改了一下并加了一个<strong>upper_bound</strong>查找ans。<br>
-本来是可以过的。。。但是我貌似把背包dp最里面的一层循环的上界开大了，于是——就超时了，改小之后就过了。。。</p>
-<p><strong>考试总结</strong>：别的不说，边界问题一定要注意！！！这次是挂了15pts，数据强一点或者捆绑测试说不定就无了。。。</p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>下午写了几道二分。。。但好像把分块给咕掉了，明天放假的话，可以把分块补一下。<br>
-晚上本来想打CF的，但九点半还没到家，就只后来稍微看了下题，交了一道题的代码，打算有时间就把剩下几道题中能力范围左右的题写了。<br>
-总的来说今天的状态还可以，希望能够每天保持。</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
