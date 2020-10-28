@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-27T13:53:25.524Z</updated>
+    <updated>2020-10-28T15:10:12.461Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[10.28学习总结]]></title>
+        <id>https://IceFake.github.io/post/LIpQ2IVKW/</id>
+        <link href="https://IceFake.github.io/post/LIpQ2IVKW/">
+        </link>
+        <updated>2020-10-28T15:01:09.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p>100 + 20 + 50 + 0 = 170</p>
+<p><strong>T1</strong>：暴力寻找n前后的两个素数</p>
+<p><strong>T2</strong>：区间dp<br>
+写了一个记忆化搜索，不过写挂了，水到20pts</p>
+<p><strong>T3</strong>：小学奥数题<br>
+然后我stl没用好。。。挂成了50pts</p>
+<p><strong>T4</strong>：数据结构</p>
+<h2 id="练习记录">练习记录</h2>
+<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
+<p>码数据结构，感觉整个人都是虚的。。。</p>
+<h2 id="计划">计划</h2>
+<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[10.27学习总结]]></title>
         <id>https://IceFake.github.io/post/ERNVaayHp/</id>
@@ -542,31 +563,6 @@ s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
 s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.23972em;"><span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的。</p>
 <p>发现了一个之前没用过的STL—— <code>nth_element(a + 1, a + k, a + n)</code><br>
 可以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 地查询第K小。</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.18学习总结]]></title>
-        <id>https://IceFake.github.io/post/lXsJPKXwr/</id>
-        <link href="https://IceFake.github.io/post/lXsJPKXwr/">
-        </link>
-        <updated>2020-10-18T13:58:59.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="关于上午">关于上午。。。</h2>
-<p>咕咕咕，sleep<br>
-醒来就11：50了。。。 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Q</mi><mi>A</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">QAQ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">Q</span><span class="mord mathdefault">A</span><span class="mord mathdefault">Q</span></span></span></span></p>
-<h2 id="下午">下午。。。</h2>
-<p>去看牙齿，折腾了一下午。。。<br>
-不过在等的时候口胡了一下luogu月赛的T1，看了下T2，暂时没有思考。</p>
-<h2 id="晚上">晚上</h2>
-<p>到机房的时候CF只剩30分钟了QAQ，再次错过一场Div.2。。。</p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>晚上的时候写了几道分块和二分答案的题。。。<br>
-然后被推荐了一道分块的交互题CF1406E，今天差不多弄明白了做法：<br>
-小于100000的素数大约有9500个，所以我们只需要对这些素数进行分块，每个进行一次B操作，然后对于每个块进行一遍A操作。<br>
-打算明天把代码敲出来。</p>
-<p>明天早上迎接新难度的考试</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
