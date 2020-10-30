@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IceFake.github.io/</id>
     <title>IceFake&apos;s Blog</title>
-    <updated>2020-10-28T15:10:12.461Z</updated>
+    <updated>2020-10-30T15:27:32.341Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IceFake.github.io/"/>
     <link rel="self" href="https://IceFake.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://IceFake.github.io/images/avatar.png</logo>
     <icon>https://IceFake.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, IceFake&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[10.30学习总结]]></title>
+        <id>https://IceFake.github.io/post/MFI-rUFWl/</id>
+        <link href="https://IceFake.github.io/post/MFI-rUFWl/">
+        </link>
+        <updated>2020-10-30T06:32:44.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
+<p>40 + 10 + 10 + 20 = 80</p>
+<p><strong>T1</strong>：不会输入和建图，淦。</p>
+<p><strong>T2</strong>：并查集。<br>
+枚举左端点。<br>
+考试的时候写了个图上dfs加上线段树优化区间。。。</p>
+<p><strong>T3</strong>：线段树优化dp。<br>
+写了个假的贪心，10pts</p>
+<p><strong>T4</strong>：</p>
+<blockquote>
+<p>切比雪夫距离转曼哈顿距离，排序二分查找，大水题。——Xinxie</p>
+</blockquote>
+<p>写了个暴力还挂了。。。</p>
+<h2 id="关于自习">关于自习</h2>
+<p>复习了一些自己之前做过的题，发现有几道题已经不会做了，看了自己写的代码才懂。。。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10.29学习总结]]></title>
+        <id>https://IceFake.github.io/post/SVowOvV9H/</id>
+        <link href="https://IceFake.github.io/post/SVowOvV9H/">
+        </link>
+        <updated>2020-10-30T06:32:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""></h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[10.28学习总结]]></title>
         <id>https://IceFake.github.io/post/LIpQ2IVKW/</id>
@@ -481,88 +513,6 @@ signed main()
 <p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
 <p>下午对T1代码进行剪枝。。。对于极限数据终于卡进了60s。。。</p>
 <p>然后晚上继续练习数位dp，练习记录写在<strong>做题记录</strong>里面。</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.20学习总结]]></title>
-        <id>https://IceFake.github.io/post/jFk3V_m5x/</id>
-        <link href="https://IceFake.github.io/post/jFk3V_m5x/">
-        </link>
-        <updated>2020-10-20T03:46:06.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
-<p>100 + 60 + 60 + 100 = 320</p>
-<p>T1：hash + map 暴力过了。。。<br>
-大概20min写完了。。。<br>
-总所周知，<code>long long</code> 的自然溢出是 <s>很可靠的</s> 。。。<br>
-<img src="https://s1.ax1x.com/2020/10/20/BSLcXq.png" alt="" loading="lazy"></p>
-<p>T2：筛素数。<br>
-20min写完了，过了大数据就没怎么管，结果交上去TLE4个点，才发现筛数写挂了。。。</p>
-<p>T3：二位前缀和。。。<br>
-写了2个小时。。。（码力不行QAQ<br>
-然后没据统计点的时候没有在原矩形中，于是WA了四个点。。。<br>
-更正的时后多开了一个 $4000 \times 4000 $ 的 bool 数组。。。然后被卡空间了。<br>
-最后去掉了 <code>#define int long long</code> 才过。<br>
-以后一定要注意空间，不能总是 <code>#define int long long</code> 。。。</p>
-<p>T4：记录每条边的贡献就差不多了。<br>
-对于每一个子节点所对应的边i，它所产生的贡献为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>×</mo><mo>(</mo><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>[</mo><mn>1</mn><mo>]</mo><mo>−</mo><mi>s</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>)</mo><mo>×</mo><mi>w</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">size[i] \times (size[1] - size[i]) \times w[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">e</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">e</span><span class="mopen">[</span><span class="mord">1</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">e</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span> ，先计算出总和，然后每次更新对应边的贡献变化就行了。<br>
-这个题。。。看到树上两点之间的最短路的时候有点懵，（树上两点之间不是只有一条路嘛。。。<br>
-不过想明白之后15min左右就写出来了。</p>
-<p>总结：感觉今天的题都还好，都在能力范围左右，但可惜挂了好几个点QAQ。<br>
-<strong>以后算时间还要记得算空间！！！</strong></p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>学习数位dp<br>
-写了几道数位dp，详情见“做题记录”<br>
-对于P2602 [ZJOI2010]数字计数差不多已经有做法了，明天写掉。<br>
-决定明天再搞一天的数位dp。</p>
-<p>晚上打了一场 CF 的 Div.3（ <s>猝死场</s><br>
-90min左右才写完ABCDEF。。。最后30min也没把G做出来。（ <s>我好菜</s><br>
-主要都是考思维。</p>
-<h2 id="计划">计划</h2>
-<p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10.19学习总结]]></title>
-        <id>https://IceFake.github.io/post/PfLN7-IsG/</id>
-        <link href="https://IceFake.github.io/post/PfLN7-IsG/">
-        </link>
-        <updated>2020-10-19T06:22:02.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="关于考试">关于考试</h2>
-<p>100 + 100 + 80 + 0 = 280</p>
-<p>T1：暴力。。。<br>
-先找到每种颜色最中间的点，然后向两端找靠近的点，直到不能swap为止，每种颜色查找完后更新Max。</p>
-<p>T2：线性dp。<br>
-上午考试的时候调了2个小时，后面才发现是dp。。。<br>
-对于每一位有无雷，进行dp，用dp1表示当前位置是雷的情况，dp01表示当前位置不是雷但下一位必须是雷的情况，用dp00表示当前位置不是雷并且下一位置也不是雷的情况，然后进行转移。</p>
-<p>T3： <s>双指针。。。</s> 还没调出来QAQ，不过 Xinxie 预处理过掉了，然后 lqs 正反两遍dp也过了。。。<br>
-上午花了20min写了，结果WA了两个点，之后下午调双指针调了2个半小时，被 Xinxie Hack 了七八组数据。。。最后晚上放弃了双指针。。。</p>
-<p>T4：用树状数组维护前缀和。<br>
-T2花的时间太多了，最后只剩下10min看T4。。。</p>
-<h2 id="练习记录">练习记录</h2>
-<p><a href="https://icefake.github.io/post/xg59kcjww/">做题记录</a></p>
-<p>下午全调考试题去了。。。</p>
-<p>晚上写了几道单调队列优化<br>
-然后被一道题卡住了：<br>
-P4296 [AHOI2007]密码箱<br>
-后来和 Xinxie 讨论了一会儿也没讨论出来，看了题解才稍微明白一点<br>
-可以将题目中的公式变形为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>=</mo><mi>k</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">(x + 1)(x - 1) = k\times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> ，然后将 n 分解为 a * b，枚举 a，而 a 是小于等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msqrt><mi>n</mi></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.23972em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8002800000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathdefault">n</span></span></span><span style="top:-2.76028em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
--10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
--50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
-35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
--221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
-s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
-s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.23972em;"><span></span></span></span></span></span></span></span></span> 的，所以复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>2</mn><mo>×</mo><msqrt><mi>n</mi></msqrt><mo>)</mo></mrow><annotation encoding="application/x-tex">O(2\times \sqrt{n})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.05028em;vertical-align:-0.25em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8002800000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathdefault">n</span></span></span><span style="top:-2.76028em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
--10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
--50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
-35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
--221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
-s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
-s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.23972em;"><span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的。</p>
-<p>发现了一个之前没用过的STL—— <code>nth_element(a + 1, a + k, a + n)</code><br>
-可以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 地查询第K小。</p>
 <h2 id="计划">计划</h2>
 <p><a href="https://www.luogu.com.cn/training/28919">这里右拐</a></p>
 ]]></content>
